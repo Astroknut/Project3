@@ -1,4 +1,5 @@
-const app 			= require('express')();
+const express 		= require('express');
+const app			= express();
 const Sequelize 	= require('sequelize');
 const user			= require('./env.js').user;
 // TO DO - a lot of these are --saved and probably
@@ -15,11 +16,6 @@ app.use(bodyParser.urlencoded({'extended': 'true'}));
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public'));
-
-// TO DO - how do we deal with angular?
-// app.set('views', __dirname + '/public/views');
-// app.engine('ejs', require('ejs').renderFile);
-// app.set('view engine', 'ejs');
 
 app.use(session({
 	secret: 'ANIMA-HAS-NO-SECRETS',
@@ -46,7 +42,7 @@ app.use(passport.session());
 // Routes
 // TO DO - this will go in config/routes
 app.get('/', function(req, res) {
-	res.send('hello world');
+	res.sendfile('./pubic/index.html');
 });
 
 app.listen(process.env.PORT || 3000, function() {
