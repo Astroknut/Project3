@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/Astroknut/Project3/issues"
   },
-  "homepage": "https://github.com/Astroknut/Project3#readme"
+  "homepage": "https://github.com/Astroknut/Project3#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "pg": "^7.2.0",
+    "require": "^2.4.20",
+    "sequelize": "^4.7.3"
+  },
+  "devDependencies": {
+    "ts-node": "^3.3.0"
+  }
 }
