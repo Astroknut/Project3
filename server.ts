@@ -13,6 +13,13 @@ let sequelize = new Sequelize('postgres://' + user +'@localhost:5432/anima');
 app.use(cookieParser());
 app.use(bodyParser());
 
+// TO DO - how do we deal with angular?
+// app.use(express.static(__dirname + '/public'));
+
+// app.set('views', __dirname + '/public/views');
+// app.engine('ejs', require('ejs').renderFile);
+// app.set('view engine', 'ejs');
+
 app.use(session({
 	secret: 'ANIMA-HAS-NO-SECRETS',
 	// This line saves the user as logged in
