@@ -1,21 +1,30 @@
-const express 		= require('express');
-const app			= express();
-const Sequelize 	= require('sequelize');
-const user			= require('./env.js').user;
-// TO DO - a lot of these are --saved and probably
-// some of them should be --save-dev'd
-const passport		= require('passport');
-const cookieParser	= require('cookie-parser');
-const bodyParser	= require('body-parser');
-const session		= require('express-session');
+import 'reflect-metadata';
+import 'zone.js/dist/zone-node';
+import { platformServer, renderModuleFactory } from '@angular/platform-server';
+import { enableProdMode } from '@angular/core';
+import { AppServerModuleNgFactory } from '../dist/ngfactory/src/app/app-server-module.ngfactory';
+import * as express from 'express';
+import * as passport from 'passport';
+import * as cookieParser  from 'cookie-parser';
+import * as bodyParser from 'body-parser';
+import * as session from 'express-session';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
-let sequelize = new Sequelize('postgres://' + user +'@localhost:5432/anima');
+// TO DO - turn this on when this file exists.
+import { router } from './config/routes';
+
+const PORT = 3000;
+
+enableProdMode();
+
+const app = express();
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({'extended': 'true'}));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/public'));
+app.use(router);
 
 app.use(session({
 	secret: 'ANIMA-HAS-NO-SECRETS',
@@ -34,17 +43,26 @@ app.use(passport.session());
 //	next();
 //});
 
-// TO DO - turn these lines on when we have
-// routes in config/routes.
-//var routes = require('./config/routes');
-//app.use(routes);
+let template = readFileSync(join(__dirname, '..', 'dist', 'index.html')).toString();
 
-// Routes
-// TO DO - this will go in config/routes
-app.get('/', function(req, res) {
-	res.sendfile('./pubic/index.html');
+app.engine('html', (_, options, callback) => {
+  const opts = { document: template, url: options.req.url };
+
+  renderModuleFactory(AppServerModuleNgFactory, opts)
+    .then(html => callback(null, html));
 });
 
-app.listen(process.env.PORT || 3000, function() {
+app.set('view engine', 'html');
+app.set('views', 'src');
+
+app.get('*.*', express.static(join(__dirname, '..', 'dist')));
+
+app.get('*', (req, res) => {
+	res.render('index', { req });
+});
+
+//let sequelize = new Sequelize('postgres://' + user +'@localhost:5432/anima');
+
+app.listen(process.env.PORT || PORT, function() {
 	console.log('Express server up and running!');
 })
