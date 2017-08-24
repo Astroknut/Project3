@@ -11,7 +11,6 @@ import * as session from 'express-session';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-// TO DO - turn this on when this file exists.
 import { router } from './config/routes';
 
 const PORT = 3000;
