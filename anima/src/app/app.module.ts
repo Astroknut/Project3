@@ -14,7 +14,7 @@ import { NewJournalComponent } from './new-journal/new-journal.component';
     NewJournalComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule.withServerTransition({appId: 'anima'})
   ],
   providers: [],
   bootstrap: [AppComponent]
