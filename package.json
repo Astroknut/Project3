@@ -1,0 +1,21 @@
+{
+  "name": "Project3",
+  "version": "1.0.0",
+  "description": "WDI Unit 3 Group Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Astroknut/Project3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Astroknut/Project3/issues"
+  },
+  "homepage": "https://github.com/Astroknut/Project3#readme"
+}
