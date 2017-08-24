@@ -9,6 +9,8 @@ import { RouterModule } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AllJournalsComponent } from './all-journals/all-journals.component';
 import { ShowJournalComponent } from './show-journal/show-journal.component';
+import { ShowEntriesComponent } from './show-entries/show-entries.component';
+import { JournalRoutingModule } from './show-journal/journal-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ShowJournalComponent } from './show-journal/show-journal.component';
     NewJournalComponent,
     LandingPageComponent,
     AllJournalsComponent,
-    ShowJournalComponent
+    ShowJournalComponent,
+    ShowEntriesComponent
   ],
   imports: [
     RouterModule.forRoot([
@@ -33,12 +36,9 @@ import { ShowJournalComponent } from './show-journal/show-journal.component';
         {
           path: 'new-journal',
           component: NewJournalComponent
-        },
-        {
-          path: 'journal/:id',
-          component: ShowJournalComponent
         }
       ]),
+    JournalRoutingModule,
     BrowserModule.withServerTransition({appId: 'anima'})
   ],
   providers: [],
