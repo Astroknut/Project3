@@ -11,11 +11,12 @@ const session		= require('express-session');
 let sequelize = new Sequelize('postgres://' + user +'@localhost:5432/anima');
 
 app.use(cookieParser());
-app.use(bodyParser());
+app.use(bodyParser.urlencoded({'extended': 'true'}));
+app.use(bodyParser.json());
+
+app.use(express.static(__dirname + '/public'));
 
 // TO DO - how do we deal with angular?
-// app.use(express.static(__dirname + '/public'));
-
 // app.set('views', __dirname + '/public/views');
 // app.engine('ejs', require('ejs').renderFile);
 // app.set('view engine', 'ejs');
