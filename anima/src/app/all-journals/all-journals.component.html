@@ -2,12 +2,15 @@
    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">+</i></a>
 </p>
 
-<div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
-    <div *ngFor="let journal of journals" class="journal"class="carousel-item red white-text" href="#one!">
-      <h2>{{journal.name}}</h2>
-    </div>
-  </div>
+<div class="journals-slider">
+	<div class="slider-button">
+		<button>Left</button>
+	</div>
+	<div class="journal-area">
+		<div *ngFor="let journal of journals" class="journal" [attr.id]="'Journal' + journal.id">{{journal.name}}</div>
+	</div>
+	<div class="slider-button">
+		<button>Right</button>
+	</div>
+</div>
 

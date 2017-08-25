@@ -3,8 +3,21 @@
 	margin: 0 auto;
 }
 
+.journals-slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider-button {
+	flex:1;
+}
+
+.journal-area {
+	flex:5
+}
+
 .journal {
-	width: 300px;
-	height: 500px;
 	background: blue;
 }

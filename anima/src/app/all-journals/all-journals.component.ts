@@ -9,10 +9,12 @@ export class AllJournalsComponent implements OnInit {
 
   journals = [
   	{
+      selected: true,
   		name: 'Daily Journal',
   		color: 'blue'
   	},
   	{
+      selected: false,
   		name: 'Creative Writing',
   		color: 'red'
   	}
@@ -21,6 +23,7 @@ export class AllJournalsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
