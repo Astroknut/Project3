@@ -27,7 +27,5 @@ export class AllJournalsComponent implements AfterViewInit {
   ngAfterViewInit() {
 
     this.selected = this.journals[1].id;
-    window.document.getElementById('journal1').classList.add('selected');
-
   }
 }

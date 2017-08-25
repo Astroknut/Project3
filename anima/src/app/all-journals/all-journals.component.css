@@ -15,7 +15,8 @@
 }
 
 .journal-area {
-	flex:5
+	flex:5;
+	overflow: hidden;
 }
 
 .journal {
@@ -27,4 +28,13 @@
 
 .journal.selected {
 	background: red;
+}
+
+.journal.moving {
+	animation: carousel;
+}
+
+@keyframes carousel {
+	0%: { left: 0%; }
+	100%: {left: -100%; }
 }
