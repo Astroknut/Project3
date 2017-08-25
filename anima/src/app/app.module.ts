@@ -13,6 +13,8 @@ import { ShowEntriesComponent } from './show-entries/show-entries.component';
 import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterializeModule } from 'ng2-materialize';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { LogInComponent } from './log-in/log-in.component';
         }
       ]),
     JournalRoutingModule,
-    BrowserModule.withServerTransition({appId: 'anima'})
+    BrowserModule.withServerTransition({appId: 'anima'}),
+    BrowserAnimationsModule,
+    MaterializeModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllJournalsComponent implements OnInit {
 
+  journals = [
+  	{
+  		name: 'Daily Journal',
+  		color: 'blue'
+  	},
+  	{
+  		name: 'Creative Writing',
+  		color: 'red'
+  	}
+  ];
+
   constructor() { }
 
   ngOnInit() {
