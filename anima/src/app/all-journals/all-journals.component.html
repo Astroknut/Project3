@@ -4,13 +4,13 @@
 
 <div class="journals-slider">
 	<div class="slider-button">
-		<button>Left</button>
+		<button (click)="cycleLeft()">Left</button>
 	</div>
 	<div class="journal-area">
-		<div *ngFor="let journal of journals" [ngClass]="{'selected': journal.id=='1'}" class="journal" [attr.id]="'journal' + journal.id">{{journal.name}}</div>
+		<div *ngFor="let journal of journals" [ngClass]="{'selected': journal.selected}" class="journal" [attr.id]="'journal' + journal.id">{{journal.name}}</div>
 	</div>
 	<div class="slider-button">
-		<button>Right</button>
+		<button (click)="cycleRight()">Right</button>
 	</div>
 </div>
 
