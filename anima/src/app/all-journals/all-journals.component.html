@@ -6,8 +6,20 @@
 	<div class="slider-button">
 		<button (click)="cycleLeft()">Left</button>
 	</div>
+	<div class="journals-left">
+		<div *ngFor="let journal of journals_left" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalLeft(journal.id)}">
+			{{journal.name}}
+		</div>
+	</div>
 	<div class="journal-area">
-		<div *ngFor="let journal of journals" [ngClass]="{'selected': journal.selected, 'moving': journal.moving}" class="journal" [attr.id]="'journal' + journal.id">{{journal.name}}</div>
+		<div *ngFor="let journal of journals" class="journal" [ngClass]="{'selected': journal.selected}">
+			{{journal.name}}
+		</div>
+	</div>
+	<div class="journals-right">
+		<div *ngFor="let journal of journals_right" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalRight(journal.id)}">
+			{{journal.name}}
+		</div>
 	</div>
 	<div class="slider-button">
 		<button (click)="cycleRight()">Right</button>
