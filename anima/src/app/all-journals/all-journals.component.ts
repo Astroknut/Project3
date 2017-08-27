@@ -47,7 +47,7 @@ export class AllJournalsComponent implements AfterViewInit {
     this.journals[0].selected = true;
   }
 
-  cycleLeft() {
+  cycleRight() {
     if(this.journals_right.length > 0) {
       this.journals_left.push(this.journals.pop());
       this.journals.push(this.journals_right.pop());
@@ -55,7 +55,7 @@ export class AllJournalsComponent implements AfterViewInit {
     }
   }
 
-  cycleRight() {
+  cycleLeft() {
     if(this.journals_left.length > 0) {
       this.journals_right.push(this.journals.pop());
       this.journals.push(this.journals_left.pop());
