@@ -36,7 +36,23 @@ export class AllJournalsComponent implements AfterViewInit {
       selected: false,
       moving_left: false,
       moving_right: false
-    }
+    },
+    {
+      id: 4,
+      name: 'YAYA',
+      color: 'blue',
+      selected: false,
+      moving_left: false,
+      moving_right: false
+    },
+    {
+      id: 5,
+      name: 'Hooray',
+      color: 'orange',
+      selected: false,
+      moving_left: false,
+      moving_right: false
+    },
   ]
 
   updateSelected() {
@@ -50,14 +66,14 @@ export class AllJournalsComponent implements AfterViewInit {
   cycleRight() {
     if(this.journals_right.length > 0) {
       this.journals_left.push(this.journals.pop());
-      this.journals.push(this.journals_right.pop());
+      this.journals.push(this.journals_right.shift());
       this.updateSelected();
     }
   }
 
   cycleLeft() {
     if(this.journals_left.length > 0) {
-      this.journals_right.push(this.journals.pop());
+      this.journals_right.unshift(this.journals.pop());
       this.journals.push(this.journals_left.pop());
       this.updateSelected();
     }
