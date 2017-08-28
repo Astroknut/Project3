@@ -63,6 +63,10 @@ export class AllJournalsComponent implements AfterViewInit {
     }
   }
 
+  goToJournal(id) {
+    
+  }
+
   // In the following two functions, we return id !== id
   // because we want to return TRUE if the journal should
   // NOT be visible.

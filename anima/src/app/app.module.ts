@@ -13,6 +13,7 @@ import { ShowEntriesComponent } from './show-entries/show-entries.component';
 import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { ContentsComponent } from './contents/contents.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LogInComponent } from './log-in/log-in.component';
     ShowJournalComponent,
     ShowEntriesComponent,
     SignUpComponent,
-    LogInComponent
+    LogInComponent,
+    ContentsComponent
   ],
   imports: [
     RouterModule.forRoot([

@@ -14,7 +14,7 @@
 	<div class="journal-area">
 		<div *ngFor="let journal of journals" class="journal" [ngClass]="{'selected': journal.selected}">
 			{{journal.name}}
-			<button [routerLink]="['../journal', journal.id]">Open</button>
+			<button [routerLink]="['../journal', journal.id, 'contents']">Open</button>
 		</div>
 	</div>
 	<div class="journals-right">
