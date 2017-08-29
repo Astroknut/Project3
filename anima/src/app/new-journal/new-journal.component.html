@@ -1,14 +1,22 @@
 <div class="journal">
-	<div class="title">
-		<label for="name">Journal Name:</label>
-		<input name="name" type="text" [(ngModel)]="name">{{name}}
+	<div class="crease">
+		po
 	</div>
-	<div class="colors">
-		<div class="color" id="yellow"></div>
-		<div class="color" id="orange"></div>
-		<div class="color" id="red"></div>
-		<div class="color" id="purple"></div>
-		<div class="color" id="blue"></div>
-		<div class="color" id="green"></div>
+	<div class="content" [style.background-color]="journal.color">
+		<div class="title">
+			<h3>Name your journal:</h3>
+			<input name="name" type="text" [(ngModel)]="journal.name">
+		</div>
+		<div class="colors">
+			<h3>Select a color:</h3>
+			<div class="color" id="yellow" (click)="setColor('yellow')"></div>
+			<div class="color" id="orange" (click)="setColor('orange')"></div>
+			<div class="color" id="red" (click)="setColor('red')"></div>
+			<div class="color" id="purple" (click)="setColor('purple')"></div>
+			<div class="color" id="blue" (click)="setColor('blue')"></div>
+			<div class="color" id="green" (click)="setColor('green')"></div>
+		</div>
+		<div class="message" *ngIf="journal.invalid">Please name your journal!</div>
+		<button class="waves-effect waves-light btn" (click)="createJournal()">Create</button>
 	</div>
 </div>
