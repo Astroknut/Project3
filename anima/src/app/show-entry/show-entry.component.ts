@@ -11,6 +11,8 @@ export class ShowEntryComponent implements OnInit {
   oldText = "";
 
   entry = {
+  	id: 1,
+  	journalId: 2,
   	date: "8/26/17",
   	text: "Donald Trump showed up at my house and I punched him right in the kisser."
   }

@@ -1,15 +1,16 @@
 .journal {
 	max-width: 70%;
-	min-height: 400px;
+	min-height: 500px;
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
 }
 
-
 .left-page {
 	flex-grow: 1;
 	background-color: red;
+	max-width: 100px;
+	min-width: 100px;
 	border: 1px solid black;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -20,4 +21,8 @@
 	border: 1px solid black;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+
+button {
+	display: inline-block;
 }
