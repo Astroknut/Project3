@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JournalService } from '../journal.service';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-all-journals',
@@ -8,6 +9,8 @@ import { JournalService } from '../journal.service';
   providers: [JournalService]
 })
 export class AllJournalsComponent implements OnInit {
+
+  subscription: Subscription;
 
   selected = 0;
 
@@ -39,10 +42,6 @@ export class AllJournalsComponent implements OnInit {
     }
   }
 
-  goToJournal(id) {
-    
-  }
-
   // In the following two functions, we return id !== id
   // because we want to return TRUE if the journal should
   // NOT be visible.
@@ -59,13 +58,18 @@ export class AllJournalsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.journals       = this.journalService.allJournals();
 
-    // Journals should start with only the first element.
-    this.journals       = this.journals.slice(0,1);
+    this.journalService.subject$.subscribe(journals => {
+      this.journals = journals;
 
-    // journals_right should include everything except the first element.
-    this.journals_right = this.journalService.allJournals();
-    this.journals_right.shift();
+      // Journals should start with only the first element.
+      this.journals       = this.journals.slice(0,1);
+
+      // journals_right should include everything except the first element.
+      this.journals_right = journals;
+      this.journals_right.shift();
+    });
+
+    this.journalService.allJournals();
   }
 }

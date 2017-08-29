@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class JournalService {
+
+  public subject: Subject<any>;
+  subject$ = null;
 
   journals = [
     {
@@ -54,28 +58,32 @@ export class JournalService {
   }
 
   entry(journalId, entryId, callback) {
-  	/*
-  	this.journals.forEach(element => {
-  		if(element.id === parseInt(journalId)) {
-  			element.entries.forEach(el => {
-  				if(el.id === parseInt(entryId)) {
-  					callback(el);
-  				}
-  			})
-  		}
-  	});*/
+  	// let journal;
+  	// this.journals.forEach(element => {
+  	// 	if(element.id === parseInt(journalId)) {
+  	// 		element.entries.forEach(el => {
+  	// 			if(el.id === parseInt(entryId)) {
+  	// 				callback(el);
+  	// 			}
+  	// 		})
+  	// 	}
+  	// });
   }
 
   addJournal(journal) {
   	journal.id = this.journals.length;
   	this.journals.push(journal);
-  	console.log(this.journals);
+  	this.subject.next(this.journals);
   }
 
   allJournals() {
-  	return this.journals;
+  	this.subject.next(this.journals);
   }
 
-  constructor() { }
+  constructor() { 
+  	this.subject = new Subject();
+  	this.subject$ = this.subject.asObservable();
+
+  }
 
 }
