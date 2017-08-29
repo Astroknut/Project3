@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http'
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms'
 
 
 import { AppComponent } from './app.component';
@@ -17,8 +18,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 
 import { WatsonService } from './watson/watson.service';
-import { WatsonComponent } from './watson/watson.component'
-
 
 @NgModule({
   declarations: [
@@ -57,13 +56,9 @@ import { WatsonComponent } from './watson/watson.component'
         }
       ]),
     JournalRoutingModule,
+    FormsModule,
     BrowserModule.withServerTransition({appId: 'anima'}),
-    WatsonComponent
-  ],
-  imports: [
-    BrowserModule.withServerTransition({appId: 'anima'}),
-    HttpModule,
-    api_call
+    HttpModule
   ],
   providers: [WatsonService],
   bootstrap: [AppComponent]

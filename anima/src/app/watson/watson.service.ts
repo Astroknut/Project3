@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable} from 'rxjs/Observable';
 import * as ToneAnalyzerV3 from 'watson-developer-cloud/tone-analyzer/v3';
-
+import {  }  from '../new-entry/new-entry.component';
 
 
 // let tone_analyzer = new ToneAnalyzerV3({
@@ -17,8 +17,9 @@ import * as ToneAnalyzerV3 from 'watson-developer-cloud/tone-analyzer/v3';
 export class WatsonService {
 
 
-	getTone(data){
+	getTone(journal){
 		console.log('getTone working WatsonService');
+    console.log(journal)
 
 		var tone_analyzer = new ToneAnalyzerV3({
     	username: '86929996-bdc0-4b96-af10-fe131ac9450c',
@@ -27,7 +28,7 @@ export class WatsonService {
     	});
 
     	var params = {
-  		text: 'here is some demo text to analyze.',
+  		text: journal,
  	    tones: 'emotion, social, language'
 		};
 
@@ -50,8 +51,10 @@ export class WatsonService {
 
 
  
- constructor(private http : Http) { }
+ constructor(
 
+   private http : Http
+   ) { }
 
 };
 
