@@ -79,6 +79,23 @@ export class JournalService {
   	});
   }
 
+  entry(journalId, entryId, callback) {
+  	this.journals.forEach(element => {
+  		if(element.id === parseInt(journalId)) {
+  			element.entries.forEach(el => {
+  				if(el.id === parseInt(entryId)) {
+  					callback(el);
+  				}
+  			})
+  		}
+  	});
+  }
+
+  addJournal(journal) {
+  	journal.id = this.journals.length;
+  	this.journals.push(journal);
+  }
+
   allJournals() {
   	return this.journals;
   }
