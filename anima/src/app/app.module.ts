@@ -52,6 +52,10 @@ import { ContentsComponent } from './contents/contents.component';
         {
           path: 'new-journal',
           component: NewJournalComponent
+        },
+        { 
+          path: 'user',
+          component: AllJournalsComponent
         }
       ]),
     JournalRoutingModule,
