@@ -1,0 +1,18 @@
+<div class="journal">
+	<div class="left-page"></div>
+	<div class="right-page">
+		<h3>{{entry.date}}</h3>
+		<div *ngIf="editing">
+			<textarea [(ngModel)] = "entry.text">
+				{{entry.text}}
+			</textarea>
+			<button (click)="saveEntry()">Save</button>
+			<button (click)="cancelEdit()">Cancel</button>
+		</div>
+		<div *ngIf="!editing">
+			<p>{{entry.text}}</p>
+			<button (click)="editEntry()">Edit</button>
+		</div>	
+	</div>
+</div>
+<button [routerLink] = "['../../', 'contents']">Back</button>
