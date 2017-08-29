@@ -54,6 +54,7 @@ export class JournalService {
   }
 
   entry(journalId, entryId, callback) {
+  	/*
   	this.journals.forEach(element => {
   		if(element.id === parseInt(journalId)) {
   			element.entries.forEach(el => {
@@ -62,7 +63,7 @@ export class JournalService {
   				}
   			})
   		}
-  	});
+  	});*/
   }
 
   addJournal(journal) {
