@@ -11,6 +11,8 @@ import {  }  from '../new-entry/new-entry.component';
 //   version_date: '2016-05-19'
 // });
 
+//let anger : number = tone.document_tone.tone_categories[0].tones[0].score;
+
 
 
 @Injectable()
@@ -20,6 +22,8 @@ export class WatsonService {
 	getTone(journal){
 		console.log('getTone working WatsonService');
     console.log(journal)
+    
+
 
 		var tone_analyzer = new ToneAnalyzerV3({
     	username: '86929996-bdc0-4b96-af10-fe131ac9450c',
@@ -29,15 +33,21 @@ export class WatsonService {
 
     	var params = {
   		text: journal,
- 	    tones: 'emotion, social, language'
+ 	    tones: 'emotion'
 		};
 
     	tone_analyzer.tone(params, function(error, tone) {
+      let anger : number = tone.document_tone.tone_categories[0].tones[0].score;
+      let disgust : number = tone.document_tone.tone_categories[0].tones[1].score;
+      let fear : number = tone.document_tone.tone_categories[0].tones[2].score;
+      let joy : number = tone.document_tone.tone_categories[0].tones[3].score;
+      let sadness : number = tone.document_tone.tone_categories[0].tones[4].score;
   			if (error)
 
     			console.log('tone_analyzer response error:', error);
   			else
    		    	console.log(JSON.stringify(tone, null, 2));
+            console.log(anger);
   		});
 
 
