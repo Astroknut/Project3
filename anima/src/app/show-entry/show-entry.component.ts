@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowEntryComponent implements OnInit {
 
+  editing = false;
+  oldText = "";
+
   entry = {
+  	id: 1,
+  	journalId: 2,
   	date: "8/26/17",
   	text: "Donald Trump showed up at my house and I punched him right in the kisser."
+  }
+
+  editEntry() {
+  	this.editing = true;
+  	this.oldText = this.entry.text;
+  }
+
+  saveEntry() {
+  	this.editing = false;
+  }
+
+  cancelEdit() {
+  	this.editing = false;
+  	this.entry.text = this.oldText;
   }
 
   constructor() { }
