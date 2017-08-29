@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+//import { JournalService } from './journal.service';
 import { NewUserComponent } from './new-user/new-user.component';
 import { NewEntryComponent } from './new-entry/new-entry.component';
 import { NewJournalComponent } from './new-journal/new-journal.component';

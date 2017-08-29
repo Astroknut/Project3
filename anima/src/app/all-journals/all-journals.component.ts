@@ -1,59 +1,19 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { JournalService } from '../journal.service';
 
 @Component({
   selector: 'app-all-journals',
   templateUrl: './all-journals.component.html',
-  styleUrls: ['./all-journals.component.css']
+  styleUrls: ['./all-journals.component.css'],
+  providers: [JournalService]
 })
-export class AllJournalsComponent implements AfterViewInit {
+export class AllJournalsComponent implements OnInit {
 
   selected = 0;
 
   journals_left = [];
-  journals = [
-    {
-      id: 1,
-      name: 'Daily Journal',
-      color: 'blue',
-      selected: true,
-      moving_left: false,
-      moving_right: false
-    }
-  ];
-  journals_right = [
-    {
-      id: 2,
-      name: 'Creative Writing',
-      color: 'red',
-      selected: false,
-      moving_left: false,
-      moving_right: false
-    },
-    {
-      id: 3,
-      name: 'Questions',
-      color: 'orange',
-      selected: false,
-      moving_left: false,
-      moving_right: false
-    },
-    {
-      id: 4,
-      name: 'YAYA',
-      color: 'blue',
-      selected: false,
-      moving_left: false,
-      moving_right: false
-    },
-    {
-      id: 5,
-      name: 'Hooray',
-      color: 'orange',
-      selected: false,
-      moving_left: false,
-      moving_right: false
-    },
-  ]
+  journals = [];
+  journals_right = []
 
   updateSelected() {
     // Unselect other journals
@@ -94,8 +54,18 @@ export class AllJournalsComponent implements AfterViewInit {
     return id !== this.journals_right[0].id;
   }
 
-  constructor() { }
+  constructor(
+    private journalService: JournalService
+  ) { }
 
-  ngAfterViewInit() {
+  ngOnInit() {
+    this.journals       = this.journalService.allJournals();
+
+    // Journals should start with only the first element.
+    this.journals       = this.journals.slice(0,1);
+
+    // journals_right should include everything except the first element.
+    this.journals_right = this.journalService.allJournals();
+    this.journals_right.shift();
   }
 }
