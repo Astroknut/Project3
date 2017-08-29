@@ -41,16 +41,16 @@ router.get(
   function(req, res) {
   	console.log(req);
   	console.log(res);
-    res.redirect(req.session.returnTo || '/all-journals');
+    res.redirect(req.session.returnTo || '/user');
   }  
 );
 
-router.get('/', ensureLoggedIn, function(req, res, next) {
-  res.render('user', {
-    user: req.user,
-    userProfile: JSON.stringify(req.user, null, '  ')
-  });
-});
+// router.get('/', ensureLoggedIn, function(req, res, next) {
+//   res.redirect('/user', {
+//     user: req.user,
+//     userProfile: JSON.stringify(req.user, null, '  ')
+//   });
+// });
 
 
 export {router};

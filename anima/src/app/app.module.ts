@@ -55,7 +55,7 @@ import { ContentsComponent } from './contents/contents.component';
         },
         { 
           path: 'user',
-          component: AllJournalsComponent
+          component: NewUserComponent
         }
       ]),
     JournalRoutingModule,
