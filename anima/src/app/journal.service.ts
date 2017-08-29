@@ -12,6 +12,7 @@ export class JournalService {
       selected: true,
       moving_left: false,
       moving_right: false,
+      invalid: false,
       entries: [
       	{
   			id: 1,
@@ -41,34 +42,7 @@ export class JournalService {
       moving_left: false,
       moving_right: false,
       entries: []
-    },
-    {
-      id: 3,
-      name: 'Questions',
-      color: 'orange',
-      selected: false,
-      moving_left: false,
-      moving_right: false,
-      entries: []
-    },
-    {
-      id: 4,
-      name: 'YAYA',
-      color: 'blue',
-      selected: false,
-      moving_left: false,
-      moving_right: false,
-      entries: []
-    },
-    {
-      id: 5,
-      name: 'Hooray',
-      color: 'orange',
-      selected: false,
-      moving_left: false,
-      moving_right: false,
-      entries: []
-    },
+    }
   ];
 
   journal(id, callback) {
@@ -94,6 +68,7 @@ export class JournalService {
   addJournal(journal) {
   	journal.id = this.journals.length;
   	this.journals.push(journal);
+  	console.log(this.journals);
   }
 
   allJournals() {

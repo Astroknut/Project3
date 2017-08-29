@@ -36,7 +36,11 @@ export class NewJournalComponent implements OnInit {
   		id: -1,
   		name: "",
   		color: "white",
-  		invalid: false
+      selected: false,
+      moving_left: false,
+      moving_right: false,
+  		invalid: false,
+      entries: []
   	}
   }
 
