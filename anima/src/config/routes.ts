@@ -19,7 +19,7 @@ router.get(
     redirectUri: env.AUTH0_CALLBACK_URL,
     audience: 'https://' + env.AUTH0_DOMAIN + '/userinfo',
     responseType: 'code',
-    scope: 'openid'
+    scope: 'openid profile'
   }),
   function(req, res) {
     res.redirect('/');
@@ -39,9 +39,18 @@ router.get(
     failureRedirect: '/'
   }),
   function(req, res) {
+  	console.log(req);
+  	console.log(res);
     res.redirect(req.session.returnTo || '/all-journals');
   }  
 );
+
+router.get('/', ensureLoggedIn, function(req, res, next) {
+  res.render('user', {
+    user: req.user,
+    userProfile: JSON.stringify(req.user, null, '  ')
+  });
+});
 
 
 export {router};
