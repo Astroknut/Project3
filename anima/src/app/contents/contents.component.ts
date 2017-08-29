@@ -1,48 +1,37 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { JournalService } from '../journal.service';
 
 @Component({
   selector: 'app-contents',
   templateUrl: './contents.component.html',
-  styleUrls: ['./contents.component.css']
+  styleUrls: ['./contents.component.css'],
+  providers: [JournalService]
 })
 export class ContentsComponent implements OnInit {
 
-  journal = {
-  	name: "Daily Journal",
-  	entries: [
-  		{
-  			id: 1,
-  			date: "8/26/17",
-  			text: "Today I ate a spider.  Donald Trump showed up at my door and I punched him right in the kisser.  What a fuck.",
-  			blurb: ""
-  		},
-  		{
-  			id: 2,
-  			date: "8/27/17",
-  			text: "Today I ate a spider.  Donald Trump showed up at my door and I punched him right in the kisser.  What a fuck.",
-  			blurb: ""
-  		},
-  		{
-  			id: 3,
-  			date: "8/28/17",
-  			text: "Today I ate a spider.  Donald Trump showed up at my door and I punched him right in the kisser.  What a fuck.",
-  			blurb: ""
-  		}
-  	]
-  }
-
+  journal;
   journalId;
   
   constructor(
-  	private route: ActivatedRoute
+  	private route: ActivatedRoute,
+    private journalService: JournalService
   ) { }
 
   ngOnInit() {
-  	this.route.params.forEach( param => this.journalId = param.id);
+    // Get journal id from URL
+  	this.route.parent.params.forEach( param => {
+      this.journalId = param.id;
+    });
 
-  	this.journal.entries.forEach(element => {
-  		element.blurb = element.text.substring(0, 50) + "... ";
-  	});
+    // Grab corresponding journal from JournalService
+    let that = this;
+    this.journalService.journal(this.journalId, function(result) {
+      that.journal = result;
+      
+      that.journal.entries.forEach(el => {
+        el.blurb = el.text.substring(0, 50) + "... ";
+      });
+    });
   }
 }
