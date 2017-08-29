@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http'
+
 
 import { AppComponent } from './app.component';
 import { NewUserComponent } from './new-user/new-user.component';
@@ -13,6 +15,10 @@ import { ShowEntriesComponent } from './show-entries/show-entries.component';
 import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
+
+import { WatsonService } from './watson/watson.service';
+import { WatsonComponent } from './watson/watson.component'
+
 
 @NgModule({
   declarations: [
@@ -51,9 +57,15 @@ import { LogInComponent } from './log-in/log-in.component';
         }
       ]),
     JournalRoutingModule,
-    BrowserModule.withServerTransition({appId: 'anima'})
+    BrowserModule.withServerTransition({appId: 'anima'}),
+    WatsonComponent
   ],
-  providers: [],
+  imports: [
+    BrowserModule.withServerTransition({appId: 'anima'}),
+    HttpModule,
+    api_call
+  ],
+  providers: [WatsonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
