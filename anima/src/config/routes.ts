@@ -14,15 +14,19 @@ router.route('/show-entry')
 	.get();
 
 //UPDATE journal entry
-router.route('/update-entry')
-	.post();
+router.post('/update-entry', function(req,res) {
+	res.send(JSON);
+})
 
 //DELETE a journal entry
-router.route('/delete-entry')
-	.remove();
+router.remove('/delete-entry', function(req,res) {
+	res.send(JSON)
+})
 
 //DELETE a journal
-router.route('/delete-journal')
-	.remove();				
+router.remove('/delete-journal', function(req,res) {
+	res.send(JSON);
+})
+			
 
 export {router};
