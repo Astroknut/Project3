@@ -10,7 +10,7 @@ import { NewJournalComponent } from './new-journal/new-journal.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AllJournalsComponent } from './all-journals/all-journals.component';
 import { ShowJournalComponent } from './show-journal/show-journal.component';
-import { ShowEntriesComponent } from './show-entries/show-entries.component';
+import { ShowEntryComponent } from './show-entry/show-entry.component';
 import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
@@ -25,7 +25,7 @@ import { ContentsComponent } from './contents/contents.component';
     LandingPageComponent,
     AllJournalsComponent,
     ShowJournalComponent,
-    ShowEntriesComponent,
+    ShowEntryComponent,
     SignUpComponent,
     LogInComponent,
     ContentsComponent

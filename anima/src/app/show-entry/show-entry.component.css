@@ -1,0 +1,23 @@
+.journal {
+	max-width: 70%;
+	min-height: 400px;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+
+.left-page {
+	flex-grow: 1;
+	background-color: red;
+	border: 1px solid black;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.right-page {
+	flex-grow: 2;
+	border: 1px solid black;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
