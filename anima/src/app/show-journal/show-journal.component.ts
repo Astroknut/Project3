@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-journal.component.css']
 })
 export class ShowJournalComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

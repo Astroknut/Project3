@@ -1,3 +1,29 @@
 <p>
-  all-journals works!
+   <a [routerLink] = "['../new-journal']" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
 </p>
+
+<div class="journals-slider">
+	<div class="slider-button">
+		<button (click)="cycleLeft()">Left</button>
+	</div>
+	<div class="journals-left">
+		<div *ngFor="let journal of journals_left" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalLeft(journal.id)}">
+			{{journal.name}}
+		</div>
+	</div>
+	<div class="journal-area">
+		<div *ngFor="let journal of journals" class="journal" [ngClass]="{'selected': journal.selected}">
+			{{journal.name}}
+			<button [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</div>
+	</div>
+	<div class="journals-right">
+		<div *ngFor="let journal of journals_right" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalRight(journal.id)}">
+			{{journal.name}}
+		</div>
+	</div>
+	<div class="slider-button">
+		<button (click)="cycleRight()">Right</button>
+	</div>
+</div>
+
