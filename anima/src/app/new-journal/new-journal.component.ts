@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewJournalComponent implements OnInit {
 
+  name;
+  
   constructor() { }
 
   ngOnInit() {

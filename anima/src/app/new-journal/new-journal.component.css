@@ -1,0 +1,49 @@
+.journal {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+input[type=text] {
+	max-width: 400px;
+}
+
+label {
+	font-size: 30px;
+}
+
+.colors {
+	text-align: center;
+}
+
+.color {
+	display: inline-block;
+	margin: 0px 5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+
+#yellow {
+	background-color: yellow;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#red {
+	background-color: red;
+}
+
+#purple {
+	background-color: purple;
+}
+
+#blue {
+	background-color: blue;
+}
+
+#green {
+	background-color: green;	
+}
