@@ -11,8 +11,6 @@ import * as ToneAnalyzerV3 from 'watson-developer-cloud/tone-analyzer/v3';
 //   version_date: '2016-05-19'
 // });
 
-//let anger : number = tone.document_tone.tone_categories[0].tones[0].score;
-
 
 
 @Injectable()
@@ -38,7 +36,7 @@ export class WatsonService {
 
           console.log('tone_analyzer response error:', error);
         else
-             console.log(JSON.stringify(tone, null, 2));
+           console.log(JSON.stringify(tone, null, 2));
       });
 
 
@@ -56,3 +54,4 @@ export class WatsonService {
 
 
 };
+

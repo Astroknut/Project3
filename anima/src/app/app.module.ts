@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
 //import { JournalService } from './journal.service';
@@ -16,8 +17,8 @@ import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ContentsComponent } from './contents/contents.component';
-import { WatsonComponent } from './watson/watson.component';
 import { WatsonService } from './watson.service'
+import { WatsonComponent } from './watson/watson.component';
 
 
 @NgModule({
@@ -64,9 +65,10 @@ import { WatsonService } from './watson.service'
         }
       ]),
     JournalRoutingModule,
-    BrowserModule.withServerTransition({appId: 'anima'})
+    BrowserModule.withServerTransition({appId: 'anima'}),
+    HttpModule
   ],
-  providers: [WatsonService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

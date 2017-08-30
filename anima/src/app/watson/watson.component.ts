@@ -1,6 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { WatsonService } from '../watson.service';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+ import { BrowserModule } from '@angular/platform-browser';
+ import { FormsModule } from '@angular/forms';
+ import { WatsonService } from '../watson.service';
+
+ 
+ // @NgModule({  !!!!This thorws a Terminal error!
+ //   imports: [
+ //     BrowserModule,
+ //     FormsModule
+ //     ]
+ //  })
 
 @Component({
   selector: 'app-watson',
@@ -10,15 +20,18 @@ import { ActivatedRoute } from '@angular/router';
 export class WatsonComponent implements OnInit {
 	
   
-  constructor(
-  	private watsonService : WatsonService
-  	) { }
+  
 
   ngOnInit() {
   }
+
   getTone(data){
   	console.log("check is working")
   	this.watsonService.getTone(data);
   	}
+constructor(
+    private watsonService : WatsonService
+    ) { }
+
 
 }

@@ -11,6 +11,8 @@ import * as bodyParser from 'body-parser';
 import * as session from 'express-session';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import * as ToneAnalyzerV3 from 'watson-developer-cloud/tone-analyzer/v3';
+import { WatsonComponent } from './app/watson/watson.component'
 
 import { router } from './config/routes';
 
