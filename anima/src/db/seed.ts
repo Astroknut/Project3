@@ -1,4 +1,4 @@
-import { db } from '..models';
+import { db } from '../models';
 let DB = db.models;
 
 var journalCreate = function() {
