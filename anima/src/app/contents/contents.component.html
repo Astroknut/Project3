@@ -1,0 +1,14 @@
+<div class="journal">
+	<div class="left-page"></div>
+	<div class="right-page">
+		<h3>New Entry</h3>
+		<button [routerLink] = "['../new-entry']">Write</button>
+
+		<h3>Table of Contents</h3>
+		<ul *ngIf="journal">
+			<li *ngFor="let entry of journal.entries">
+				{{entry.date}}: {{entry.blurb}}<a [routerLink] = "['../show-entry', entry.id]">Open</a>
+			</li>
+		</ul>
+	</div>
+</div>

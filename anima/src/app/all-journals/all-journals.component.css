@@ -1,0 +1,63 @@
+.btn-floating {
+	display: block;
+	margin: 0 auto;
+}
+
+.journals-slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider-button {
+	flex:1;
+}
+
+.journals-left, 
+.journals-right, 
+.journal-area {
+	flex: 1;
+	overflow: hidden;
+}
+
+.journal {
+	display: inline-block;
+	visibility: visible;
+	position: relative;
+	width: 300px;
+	height: 500px;
+	background: blue;
+}
+
+.journal.invisible {
+	display: none;
+}
+
+.journal.selected {
+	display: block;
+	margin: 0 auto;
+	background: red;
+}
+
+@keyframes carouselLeft {
+	0% 		{ left: 0px; }
+	100% 	{ left: 300px; }
+}
+
+@keyframes carouselRight {
+	0% 		{ left: 0px; }
+	100% 	{ left: -300px; }
+}
+
+.journal.moving-left {
+	animation-name: carouselLeft;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.journal.moving-right {
+	animation-name: carouselRight;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
