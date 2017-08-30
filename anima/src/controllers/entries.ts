@@ -40,7 +40,7 @@ function destroy(req, res) {
 }
 
 const EntriesController = <any>{};
-EntriesController.index = index;
+EntriesController.showEntries = showEntries;
 EntriesController.show = show;
 EntriesController.create = create;
 EntriesController.destroy = destroy;

@@ -79,7 +79,7 @@ router.delete('/journals-delete/:id', JournalsController.destroy);
 //Entry Routes
 
 //Entry Index
-router.get('/entry-index', EntriesController.index);
+router.get('/journal-entries/:journalId', EntriesController.showEntries);
 
 //GET a journal entry
 router.get('/entry-show/:id', EntriesController.show);

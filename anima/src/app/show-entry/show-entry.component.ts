@@ -43,7 +43,7 @@ export class ShowEntryComponent implements OnInit {
     let that = this;
     this.journalService.oneEntry(this.entryId)
       .subscribe(result => {
-      that.entry = result;
+        that.entry = result.json();
     });
   }
 }

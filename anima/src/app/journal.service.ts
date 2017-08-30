@@ -20,6 +20,10 @@ export class JournalService {
   	return this.http.get(`${this.baseUrl}/journal-entries/${journalId}`)
   }
 
+  addEntry(entry) {
+  	return this.http.post(`${this.baseUrl}/entry-new`, entry);
+  }
+
   addJournal(journal) {
   	return this.http.post(`${this.baseUrl}/journals-new`, journal);
   }

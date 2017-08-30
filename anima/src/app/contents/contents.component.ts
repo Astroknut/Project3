@@ -30,7 +30,10 @@ export class ContentsComponent implements OnInit {
     this.journalService.journal(this.journalId)
       .subscribe(response => {
         that.journal = response.json();
-        console.log(that.journal);
+        that.journal.entries.forEach(element => {
+          element.blurb = element.text.substring(0, 60) + "...";
+        })
+        //console.log(that.journal);
     });
   }
 }
