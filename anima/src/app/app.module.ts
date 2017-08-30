@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/Http';
 
 import { AppComponent } from './app.component';
-//import { JournalService } from './journal.service';
+import { JournalService } from './journal.service';
 import { NewUserComponent } from './new-user/new-user.component';
 import { NewEntryComponent } from './new-entry/new-entry.component';
 import { NewJournalComponent } from './new-journal/new-journal.component';
@@ -32,7 +33,9 @@ import { ContentsComponent } from './contents/contents.component';
     ContentsComponent
   ],
   imports: [
+    BrowserModule.withServerTransition({appId: 'anima'}),
     FormsModule,
+    HttpModule,
     RouterModule.forRoot([
         {
           path: '',
@@ -59,10 +62,9 @@ import { ContentsComponent } from './contents/contents.component';
           component: NewUserComponent
         }
       ]),
-    JournalRoutingModule,
-    BrowserModule.withServerTransition({appId: 'anima'})
+    JournalRoutingModule
   ],
-  providers: [],
+  providers: [JournalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

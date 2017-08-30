@@ -1,60 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/Http';
 import { Observable } from 'rxjs';
 import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class JournalService {
 
-  public subject: Subject<any>;
-  subject$ = null;
+   baseUrl = 'http://localhost:3000';
 
-  journals = [
-    {
-      id: 1,
-      name: 'Daily Journal',
-      color: 'blue',
-      selected: true,
-      moving_left: false,
-      moving_right: false,
-      invalid: false,
-      entries: [
-      	{
-  			id: 1,
-  			date: "8/26/17",
-  			text: "Today I ate a spider.  Donald Trump showed up at my door and I punched him right in the kisser.  What a fuck.",
-  			blurb: ""
-  		},
-  		{
-  			id: 2,
-  			date: "8/27/17",
-  			text: "Scooby Doo.  Donald Trump showed up at my door and I punched him right in the kisser.  What a fuck.",
-  			blurb: ""
-  		},
-  		{
-  			id: 3,
-  			date: "8/28/17",
-  			text: "ayayayaya.  Donald Trump showed up at my door and I punched him right in the kisser.  What a fuck.",
-  			blurb: ""
-  		}
-      ]
-    },
-    {
-      id: 2,
-      name: 'Creative Writing',
-      color: 'red',
-      selected: false,
-      moving_left: false,
-      moving_right: false,
-      entries: []
-    }
-  ];
-
-  journal(id, callback) {
-  	this.journals.forEach(element => {
-  		if(element.id === parseInt(id)) {
-  			callback(element);
-  		}
-  	});
+  journal(id) {
+  	return this.http.get(`${this.baseUrl}/journal-show/${id}`);
   }
 
   entry(journalId, entryId, callback) {
@@ -71,19 +26,12 @@ export class JournalService {
   }
 
   addJournal(journal) {
-  	journal.id = this.journals.length;
-  	this.journals.push(journal);
-  	this.subject.next(this.journals);
+  	return this.http.post(`${this.baseUrl}/journals-new`, journal);
   }
 
   allJournals() {
-  	this.subject.next(this.journals);
+  	return this.http.get(`${this.baseUrl}/journals-index`);
   }
 
-  constructor() { 
-  	this.subject = new Subject();
-  	this.subject$ = this.subject.asObservable();
-
-  }
-
+  constructor(private http: Http) { }
 }

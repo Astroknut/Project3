@@ -2,16 +2,21 @@ import { db } from '../models';
 let DB = db.models;
 
 var journalCreate = function() {
-	return DB.Journal.create({
-	name: 'Creative Writing',
-    color: 'red',
-    selected: false,
-    moving_left: false,
-    moving_right: false
-	});
+	// TO DO - Look at Tunr to figure out how to connect users
+	return DB.Journal.bulkCreate([{
+		name: 'Creative Writing',
+	    color: 'red'
+	},
+	{
+		name: 'Love Letters',
+		color: 'blue'
+	}]);
 };
 
 journalCreate()
 .then(function() {
-	process.exit();
+	entriesCreate()
+	.then(function() {
+		process.exit();
+	})
 });

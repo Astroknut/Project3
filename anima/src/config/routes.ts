@@ -64,8 +64,8 @@ router.get('/journals-index', JournalsController.index);
 //GET a journal
 router.get('/journal-show/:id', JournalsController.show);
 
-//GET a journal entry
-// router.get('/show-entry', JournalsController.showEntry)
+//GET journal entries of a journal
+router.get('/show-entries/:journalId', EntriesController.showEntries)
 
 //CREATE a journal
 router.post('/journals-new', JournalsController.create);

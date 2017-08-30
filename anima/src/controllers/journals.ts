@@ -1,19 +1,18 @@
 //import db from models here
 import { db } from '../models';
+
 var Journal = db.models.Journal;
 
 function index(req, res) {
 	Journal.findAll().then(function(journals) {
 		res.json(journals);
 	});
-} //cooment
+}
 
 function show(req, res) {
   Journal.findById(req.params.id)
   .then(function(journal){
     if(!journal) res.send(res, "not found");
-    //Journal.start();
-    //journal.write();
     else res.json(journal);
   });	
 }
