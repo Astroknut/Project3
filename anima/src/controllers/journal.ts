@@ -6,7 +6,7 @@ function index(req, res) {
 	Journal.findAll().then(function(journals) {
 		res.json(journals);
 	});
-}
+} 
 
 function show(req, res) {
   Journal.findById(req.params.id)
