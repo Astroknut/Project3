@@ -1,32 +1,33 @@
 import * as express from 'express';
 var router = express.Router();
+import { journalController } from '../controllers/journal';
+import { userController } from '../controllers/user'
 
-//GET home 
-router.route('/all-journals')
-	.get();
+//Journal routes
+
+//index
+router.get('/all-journals', journalController.index);
 
 //GET a journal
-router.route('/show-journal')
-	.get();
+router.get('/show-journal', journalController.show);
 
 //GET a journal entry
-router.route('/show-entry')
-	.get();
+router.get('/show-entry', journalController.showEntry)
+
+//CREATE a journal
+router.post('/new-journal', journalController.create);
+
+//CREATE a journal entry
+router.post('/new-entry', journalController.newEntry);
 
 //UPDATE journal entry
-router.post('/update-entry', function(req,res) {
-	res.send(JSON);
-})
+router.put('/update-entry', journalController.update);
 
-//DELETE a journal entry
-router.remove('/delete-entry', function(req,res) {
-	res.send(JSON)
-})
+//DESTROY a journal entry
+router.delete('/delete-entry', journalController.destroyEntry);
 
-//DELETE a journal
-router.remove('/delete-journal', function(req,res) {
-	res.send(JSON);
-})
+//DESTROY a journal
+router.delete('/delete-journal', journalController.destroy);
 			
 
 export {router};
