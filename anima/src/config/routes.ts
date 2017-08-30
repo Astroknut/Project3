@@ -4,7 +4,7 @@ import * as ensure from 'connect-ensure-login';
 
 import { JournalsController } from '../controllers/journals';
 import { UsersController } from '../controllers/users';
-// import { EntriesController } from '../controller/entries';
+import { EntriesController } from '../controllers/entries';
 
 const router = express.Router();
 const ensureLoggedIn = ensure.ensureLoggedIn();
@@ -85,7 +85,7 @@ router.get('/entry-index', EntriesController.index);
 router.get('/entry-show/:id', EntriesController.show);
 
 //CREATE a journal entry
-router.post('/entry-new', JournalsController.new);
+router.post('/entry-new', EntriesController.create);
 
 //DESTROY a journal entry
 router.delete('/entry-delete/:id', EntriesController.destroy);
