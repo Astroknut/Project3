@@ -19,7 +19,7 @@ router.get(
     redirectUri: env.AUTH0_CALLBACK_URL,
     audience: 'https://' + env.AUTH0_DOMAIN + '/userinfo',
     responseType: 'code',
-    scope: 'openid profile'
+    scope: 'openid'
   }),
   function(req, res) {
     res.redirect('/');
@@ -39,8 +39,7 @@ router.get(
     failureRedirect: '/'
   }),
   function(req, res) {
-  	console.log(req);
-  	console.log(res);
+  	console.log(req.user._json.sub);
     res.redirect(req.session.returnTo || '/user');
   }  
 );

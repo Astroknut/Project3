@@ -55,7 +55,7 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-
+app.use(session({secret: 'sssshhhhhh'}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(router);
