@@ -1,6 +1,11 @@
 import * as express from 'express';
 import * as passport from 'passport';
 import * as ensure from 'connect-ensure-login';
+
+import { JournalsController } from '../controllers/journals';
+import { UsersController } from '../controllers/users';
+// import { EntriesController } from '../controller/entries';
+
 const router = express.Router();
 const ensureLoggedIn = ensure.ensureLoggedIn();
 
@@ -50,6 +55,33 @@ router.get(
 //     userProfile: JSON.stringify(req.user, null, '  ')
 //   });
 // });
+
+//Journal routes
+
+//index
+router.get('/all-journals', JournalsController.index);
+
+//GET a journal
+router.get('/show-journal', JournalsController.show);
+
+//GET a journal entry
+// router.get('/show-entry', JournalsController.showEntry)
+
+//CREATE a journal
+router.post('/new-journal', JournalsController.create);
+
+//CREATE a journal entry
+// router.post('/new-entry', JournalsController.newEntry);
+
+//UPDATE journal entry
+router.put('/update-entry', JournalsController.update);
+
+//DESTROY a journal entry
+// router.delete('/delete-entry', JournalsController.destroyEntry);
+
+//DESTROY a journal
+router.delete('/delete-journal', JournalsController.destroy);
+
 
 
 export {router};
