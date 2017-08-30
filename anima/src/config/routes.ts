@@ -58,6 +58,7 @@ router.get(
 
 //Journal routes
 
+
 //Journal Index
 router.get('/journals-index', JournalsController.index);
 
@@ -72,6 +73,7 @@ router.put('/journals-update/:id', JournalsController.update);
 
 //DESTROY a journal
 router.delete('/journals-delete/:id', JournalsController.destroy);
+
 
 
 //Entry Routes
