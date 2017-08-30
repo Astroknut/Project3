@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 //import { JournalService } from './journal.service';
@@ -32,7 +33,9 @@ import { ContentsComponent } from './contents/contents.component';
     ContentsComponent
   ],
   imports: [
+    BrowserModule.withServerTransition({appId: 'anima'}),
     FormsModule,
+    HttpModule,
     RouterModule.forRoot([
         {
           path: '',
@@ -63,8 +66,7 @@ import { ContentsComponent } from './contents/contents.component';
           component: NewEntryComponent
         }
       ]),
-    JournalRoutingModule,
-    BrowserModule.withServerTransition({appId: 'anima'})
+    JournalRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
