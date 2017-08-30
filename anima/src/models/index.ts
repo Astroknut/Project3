@@ -1,9 +1,9 @@
 import * as Sequelize from 'sequelize';
 
-var sequelize = new Sequelize('postgres://jverdolino@localhost:5432/tunr_models');
+var sequelize = new Sequelize('postgres://jverdolino@localhost:5432/project3');
 
 var Entry = sequelize.import("./entry");
-var Jounarl = sequelize.import('./journal');
+var Journal = sequelize.import('./journal');
 var User = sequelize.import('./user');
 
 Entry.belongsTo(Journal);

@@ -7,8 +7,7 @@ var journalCreate = function() {
     color: 'red',
     selected: false,
     moving_left: false,
-    moving_right: false,
-    entries: []
+    moving_right: false
 	});
 };
 
