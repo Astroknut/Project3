@@ -16,6 +16,7 @@ import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ContentsComponent } from './contents/contents.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ContentsComponent } from './contents/contents.component';
     ShowEntryComponent,
     SignUpComponent,
     LogInComponent,
-    ContentsComponent
+    ContentsComponent,
+    AboutMeComponent
   ],
   imports: [
     FormsModule,
