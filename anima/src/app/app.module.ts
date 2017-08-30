@@ -16,6 +16,9 @@ import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ContentsComponent } from './contents/contents.component';
+import { WatsonComponent } from './watson/watson.component';
+import { WatsonService } from './watson.service'
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { ContentsComponent } from './contents/contents.component';
     ShowEntryComponent,
     SignUpComponent,
     LogInComponent,
-    ContentsComponent
+    ContentsComponent,
+    WatsonComponent
   ],
   imports: [
     FormsModule,
@@ -62,7 +66,7 @@ import { ContentsComponent } from './contents/contents.component';
     JournalRoutingModule,
     BrowserModule.withServerTransition({appId: 'anima'})
   ],
-  providers: [],
+  providers: [WatsonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
