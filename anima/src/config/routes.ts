@@ -44,7 +44,7 @@ router.get(
     failureRedirect: '/'
   }),
   function(req, res) {
-  	console.log(req.user._json.sub);
+    console.log(req.user._json.sub);
     res.redirect(req.session.returnTo || '/user');
   }  
 );
@@ -58,32 +58,37 @@ router.get(
 
 //Journal routes
 
-//index
+
+//Journal Index
 router.get('/journals-index', JournalsController.index);
 
 //GET a journal
 router.get('/journal-show/:id', JournalsController.show);
 
-//GET journal entries of a journal
-//router.get('/journal-entries/:journalId', EntriesController.showEntries);
-
-//GET one entry
-//router.get('/show-entry/:id', EntriesController.showEntry);
-
 //CREATE a journal
 router.post('/journals-new', JournalsController.create);
 
-//CREATE a journal entry
-// router.post('/new-entry', JournalsController.newEntry);
-
-//UPDATE journal entry
-//router.put('/update-entry', JournalsController.update);
-
-//DESTROY a journal entry
-// router.delete('/delete-entry', JournalsController.destroyEntry);
+//UPDATE journal 
+router.put('/journals-update/:id', JournalsController.update);
 
 //DESTROY a journal
 router.delete('/journals-delete/:id', JournalsController.destroy);
+
+
+
+//Entry Routes
+
+//Entry Index
+router.get('/entry-index', EntriesController.index);
+
+//GET a journal entry
+router.get('/entry-show/:id', EntriesController.show);
+
+//CREATE a journal entry
+router.post('/entry-new', EntriesController.create);
+
+//DESTROY a journal entry
+router.delete('/entry-delete/:id', EntriesController.destroy);
 
 
 
