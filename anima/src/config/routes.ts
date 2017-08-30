@@ -58,29 +58,35 @@ router.get(
 
 //Journal routes
 
-//index
-router.get('/all-journals', JournalsController.index);
+//Journal Index
+router.get('/journals-index', JournalsController.index);
+
+//Entry Index
+router.get('/entry-index', EntriesController.index);
 
 //GET a journal
-router.get('/show-journal', JournalsController.show);
+router.get('/journal-show/:id', JournalsController.show);
 
 //GET a journal entry
-// router.get('/show-entry', JournalsController.showEntry)
+router.get('/entry-show/:id', JournalsController.showEntry);
 
 //CREATE a journal
-router.post('/new-journal', JournalsController.create);
+router.post('/journals-new', JournalsController.create);
 
 //CREATE a journal entry
-// router.post('/new-entry', JournalsController.newEntry);
+router.post('/entry-new', JournalsController.newEntry);
+
+//UPDATE journal 
+router.put('/journals-update/:id', JournalsController.update);
 
 //UPDATE journal entry
-router.put('/update-entry', JournalsController.update);
-
-//DESTROY a journal entry
-// router.delete('/delete-entry', JournalsController.destroyEntry);
+router.put('/entry-update/:id', EntriesController.update);
 
 //DESTROY a journal
-router.delete('/delete-journal', JournalsController.destroy);
+router.delete('/journals-delete/:id', JournalsController.destroy);
+
+//DESTROY a journal entry
+router.delete('/entry-delete/:id', JournalsController.destroyEntry);
 
 
 
