@@ -39,9 +39,17 @@ router.get(
     failureRedirect: '/'
   }),
   function(req, res) {
-    res.redirect(req.session.returnTo || '/all-journals');
+  	console.log(req.user._json.sub);
+    res.redirect(req.session.returnTo || '/user');
   }  
 );
+
+// router.get('/', ensureLoggedIn, function(req, res, next) {
+//   res.redirect('/user', {
+//     user: req.user,
+//     userProfile: JSON.stringify(req.user, null, '  ')
+//   });
+// });
 
 
 export {router};
