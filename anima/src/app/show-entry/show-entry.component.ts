@@ -41,8 +41,9 @@ export class ShowEntryComponent implements OnInit {
     this.route.parent.params.forEach( param => this.journalId = param.id );
 
     let that = this;
-    this.journalService.entry(this.journalId, this.entryId, function(result) {
+    this.journalService.oneEntry(this.entryId)
+      .subscribe(result => {
       that.entry = result;
-    })
+    });
   }
 }

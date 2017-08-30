@@ -12,17 +12,12 @@ export class JournalService {
   	return this.http.get(`${this.baseUrl}/journal-show/${id}`);
   }
 
-  entry(journalId, entryId, callback) {
-  	// let journal;
-  	// this.journals.forEach(element => {
-  	// 	if(element.id === parseInt(journalId)) {
-  	// 		element.entries.forEach(el => {
-  	// 			if(el.id === parseInt(entryId)) {
-  	// 				callback(el);
-  	// 			}
-  	// 		})
-  	// 	}
-  	// });
+  oneEntry(entryId) {
+  	return this.http.get(`${this.baseUrl}/entry-show/${entryId}`)
+  }
+
+  allEntries(journalId) {
+  	return this.http.get(`${this.baseUrl}/journal-entries/${journalId}`)
   }
 
   addJournal(journal) {

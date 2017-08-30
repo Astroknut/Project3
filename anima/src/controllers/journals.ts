@@ -1,6 +1,7 @@
 //import db from models here
 import { db } from '../models';
 
+var Entry = db.models.Entry;
 var Journal = db.models.Journal;
 
 function index(req, res) {
@@ -10,7 +11,9 @@ function index(req, res) {
 }
 
 function show(req, res) {
-  Journal.findById(req.params.id)
+  Journal.findById(req.params.id, {
+    include: Entry
+  })
   .then(function(journal){
     if(!journal) res.send(res, "not found");
     else res.json(journal);

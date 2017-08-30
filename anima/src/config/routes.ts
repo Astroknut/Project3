@@ -4,7 +4,7 @@ import * as ensure from 'connect-ensure-login';
 
 import { JournalsController } from '../controllers/journals';
 import { UsersController } from '../controllers/users';
-// import { EntriesController } from '../controller/entries';
+import { EntriesController } from '../controllers/entries';
 
 const router = express.Router();
 const ensureLoggedIn = ensure.ensureLoggedIn();
@@ -65,7 +65,10 @@ router.get('/journals-index', JournalsController.index);
 router.get('/journal-show/:id', JournalsController.show);
 
 //GET journal entries of a journal
-router.get('/show-entries/:journalId', EntriesController.showEntries)
+//router.get('/journal-entries/:journalId', EntriesController.showEntries);
+
+//GET one entry
+//router.get('/show-entry/:id', EntriesController.showEntry);
 
 //CREATE a journal
 router.post('/journals-new', JournalsController.create);

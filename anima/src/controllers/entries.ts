@@ -2,7 +2,7 @@
 import { db } from '../models';
 
 var Journal = db.models.Journal;
-var Entries = db.models.Entry;
+var Entry = db.models.Entry;
 
 function showEntries(req, res) {
 	Entry.findAll({
@@ -15,3 +15,15 @@ function showEntries(req, res) {
 		res.json(entries);
 	});
 }
+
+function showEntry(req, res) {
+	Entry.findById(req.params.id, {
+
+	})
+}
+
+const EntriesController = <any>{};
+EntriesController.showEntries = showEntries;
+EntriesController.showEntry = showEntry;
+
+export {EntriesController};

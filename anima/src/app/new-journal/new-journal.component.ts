@@ -21,8 +21,11 @@ export class NewJournalComponent implements OnInit {
   		this.journal.invalid = true;
   	} else {
   		this.journal.invalid = false;
-      this.journalService.addJournal(this.journal);
-  		this.router.navigate(['../journal/', this.journal.id, 'new-entry']);
+      this.journalService.addJournal(this.journal)
+        .subscribe(result => {
+          console.log(result);
+          this.router.navigate(['../journal/', this.journal.id, 'new-entry']);
+        });
   	}
   }
 
