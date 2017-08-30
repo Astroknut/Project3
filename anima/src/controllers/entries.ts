@@ -21,8 +21,8 @@ function create(req, res) {
 }
 
 function destroy(req, res) {
-	Entry.findById(req,params.id).then(function(entry){
-		is(!entry) res.send(res, "Entry not found");
+	Entry.findById(req.params.id).then(function(entry){
+		if(!entry) res.send(res, "Entry not found");
 		else return entry.destroy();
 	})
 	.then(function(){
