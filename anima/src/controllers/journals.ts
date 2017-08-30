@@ -22,6 +22,7 @@ function show(req, res) {
 
 function create(req, res) {
 	Journal.create(req.body).then(function(journal){
+    console.log('saved journal: ' + journal);
     if(!journal) res.send(res, "not saved");
     else res.json(journal);
   });
