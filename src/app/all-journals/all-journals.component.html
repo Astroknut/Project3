@@ -33,6 +33,20 @@
 		<button class="waves-effect waves-light btn purple lighten-2" (click)="cycleRight()">Right</button>
 	</div>
 </div>
+<!-- LIST -->
+<div class="journals-list">
+	<ul>
+		<li *ngFor="let journal of journals_left">
+			{{journal.name}} <button class="list-button waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</li>
+		<li *ngFor="let journal of journals">
+			{{journal.name}} <button class="list-button waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</li>
+		<li *ngFor="let journal of journals_right">
+			{{journal.name}} <button class="list-button waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</li>
+	</ul>
+</div>
 
 
 

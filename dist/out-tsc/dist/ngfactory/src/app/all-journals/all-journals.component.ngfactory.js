@@ -80,6 +80,63 @@ function View_AllJournalsComponent_3(_l) {
         _ck(_v, 5, 0, currVal_3);
     });
 }
+function View_AllJournalsComponent_4(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 6, 'li', [], null, null, null, null, null)), (_l()(),
+            i1.ɵted(null, ['\n			', ' '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'list-button waves-effect waves-light btn purple lighten-2']], null, [[null, 'click']], function (_v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (i1.ɵnov(_v, 3).onClick() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), i1.ɵdid(16384, null, 0, i3.RouterLink, [i3.Router, i3.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0,
+                'routerLink'] }, null), i1.ɵpad(3), (_l()(), i1.ɵted(null, ['Open'])),
+        (_l()(), i1.ɵted(null, ['\n		']))], function (_ck, _v) {
+        var currVal_1 = _ck(_v, 4, 0, '../journal', _v.context.$implicit.id, 'contents');
+        _ck(_v, 3, 0, currVal_1);
+    }, function (_ck, _v) {
+        var currVal_0 = _v.context.$implicit.name;
+        _ck(_v, 1, 0, currVal_0);
+    });
+}
+function View_AllJournalsComponent_5(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 6, 'li', [], null, null, null, null, null)), (_l()(),
+            i1.ɵted(null, ['\n			', ' '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'list-button waves-effect waves-light btn purple lighten-2']], null, [[null, 'click']], function (_v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (i1.ɵnov(_v, 3).onClick() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), i1.ɵdid(16384, null, 0, i3.RouterLink, [i3.Router, i3.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0,
+                'routerLink'] }, null), i1.ɵpad(3), (_l()(), i1.ɵted(null, ['Open'])),
+        (_l()(), i1.ɵted(null, ['\n		']))], function (_ck, _v) {
+        var currVal_1 = _ck(_v, 4, 0, '../journal', _v.context.$implicit.id, 'contents');
+        _ck(_v, 3, 0, currVal_1);
+    }, function (_ck, _v) {
+        var currVal_0 = _v.context.$implicit.name;
+        _ck(_v, 1, 0, currVal_0);
+    });
+}
+function View_AllJournalsComponent_6(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 6, 'li', [], null, null, null, null, null)), (_l()(),
+            i1.ɵted(null, ['\n			', ' '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'list-button waves-effect waves-light btn purple lighten-2']], null, [[null, 'click']], function (_v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (i1.ɵnov(_v, 3).onClick() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), i1.ɵdid(16384, null, 0, i3.RouterLink, [i3.Router, i3.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0,
+                'routerLink'] }, null), i1.ɵpad(3), (_l()(), i1.ɵted(null, ['Open'])),
+        (_l()(), i1.ɵted(null, ['\n		']))], function (_ck, _v) {
+        var currVal_1 = _ck(_v, 4, 0, '../journal', _v.context.$implicit.id, 'contents');
+        _ck(_v, 3, 0, currVal_1);
+    }, function (_ck, _v) {
+        var currVal_0 = _v.context.$implicit.name;
+        _ck(_v, 1, 0, currVal_0);
+    });
+}
 function View_AllJournalsComponent_0(_l) {
     return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 7, 'p', [], null, null, null, null, null)), (_l()(),
             i1.ɵted(null, ['\n   '])), (_l()(), i1.ɵeld(0, null, null, 4, 'a', [['class', 'btn-floating btn-large waves-effect waves-light red']], [[1,
@@ -121,7 +178,13 @@ function View_AllJournalsComponent_0(_l) {
             return ad;
         }, null, null)), (_l()(), i1.ɵted(null, ['Right'])), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
-            i1.ɵted(null, ['\n\n\n\n']))], function (_ck, _v) {
+            i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
+            i1.ɵeld(0, null, null, 13, 'div', [['class', 'journals-list']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 10, 'ul', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_AllJournalsComponent_4)),
+        i1.ɵdid(802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef,
+            i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_AllJournalsComponent_5)), i1.ɵdid(802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_AllJournalsComponent_6)),
+        i1.ɵdid(802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef,
+            i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n\n\n']))], function (_ck, _v) {
         var _co = _v.component;
         var currVal_2 = _ck(_v, 4, 0, '../new-journal');
         _ck(_v, 3, 0, currVal_2);
@@ -131,6 +194,12 @@ function View_AllJournalsComponent_0(_l) {
         _ck(_v, 27, 0, currVal_4);
         var currVal_5 = _co.journals_right;
         _ck(_v, 33, 0, currVal_5);
+        var currVal_6 = _co.journals_left;
+        _ck(_v, 49, 0, currVal_6);
+        var currVal_7 = _co.journals;
+        _ck(_v, 52, 0, currVal_7);
+        var currVal_8 = _co.journals_right;
+        _ck(_v, 55, 0, currVal_8);
     }, function (_ck, _v) {
         var currVal_0 = i1.ɵnov(_v, 3).target;
         var currVal_1 = i1.ɵnov(_v, 3).href;
