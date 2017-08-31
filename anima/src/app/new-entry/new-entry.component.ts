@@ -28,14 +28,14 @@ export class NewEntryComponent implements OnInit {
     
   }
     
-  journal:any;  
+  journal:any ="Here is some demo text to check!";  
   result;
   angerLevel;
   disgustLevel;
   fearLevel;
   joyLevel;
   sadnessLevel;
-    
+
 
   getTone(){
      // let tones = this.result.document_tone.tone_categories[0].tones;
