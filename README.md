@@ -1,4 +1,13 @@
 # Anima
+Checkout the WireFrames for our app!
+![Alt text](./src/assets/allJournals?raw=true "All Journals View")
+![Alt text](./src/assets/showJournal.JPG?raw=true "One Journal")
+![Alt text](./src/assets/entry.JPG?raw=true "Entry View")
+![Alt text](./src/assets/charts.JPG?raw=true "Watson Analysis")
+![Alt text](./src/assets/ERD.JPG?raw=true "PSQL Models")
+
+
+#Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
