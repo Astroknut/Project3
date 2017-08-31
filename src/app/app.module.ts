@@ -1,8 +1,8 @@
-import { HttpModule } from '@angular/Http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/Http';
 
 import { AppComponent } from './app.component';
 import { JournalService } from './journal.service';

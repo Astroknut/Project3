@@ -6,7 +6,9 @@ import { Http } from '@angular/Http';
 @Injectable()
 export class JournalService {
 
-   baseUrl = process.env.PORT || 'http://localhost:3000';
+  baseUrl = process.env.PORT || 'http://localhost:3000';
+
+  constructor(private http: Http) { }
 
   journal(id) {
   	return this.http.get(`${this.baseUrl}/journal-show/${id}`);
@@ -35,6 +37,4 @@ export class JournalService {
   allJournals() {
   	return this.http.get(`${this.baseUrl}/journals-index`);
   }
-
-  constructor(private http: Http) { }
 }
