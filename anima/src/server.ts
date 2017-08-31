@@ -13,8 +13,6 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 //import * as httpProxy from 'http-proxy'
 import { router } from './config/routes';
-import * as ToneAnalyzerV3 from 'watson-developer-cloud/tone-analyzer/v3';
-import { WatsonComponent } from './app/watson/watson.component'
 
 
 const PORT = 3000;
@@ -88,35 +86,8 @@ app.get('*', (req, res) => {
 	res.render('index', { req });
 });
 
-<<<<<<< HEAD
-// var toneanalyzer = new ToneAnalyzerV3({
-//     	username: 'b9219ac2-92c6-4752-9c7d-5baf887b2199',
-//     	password: 'iMlAST68Iyqk',
-//     	version_date: '2016-05-19'
-//     	});
 
-// app.post('/api/tone', function(req, res, next) {
-//   toneanalyzer.tone("here is a body of text to check", function(err, data) {
-//     if (err) {
-//       return next(err);
-//     }
-//     return res.json(data);
-//   });
-// });
 
-// var proxy = new httpProxy.RoutingProxy();
-
-// function apiProxy(host, port) {
-//   return function(req, res, next) {
-//     if(req.url.match(new RegExp('^\/api\/'))) {
-//       proxy.proxyRequest(req, res, {host: host, port: port});
-//     } else {
-//       next();
-//     }
-//   }
-// }
-=======
->>>>>>> newWatson
 
 //let sequelize = new Sequelize('postgres://' + user +'@localhost:5432/anima');
 

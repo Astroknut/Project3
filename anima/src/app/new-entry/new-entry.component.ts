@@ -1,6 +1,6 @@
 
 import { Component, OnInit, NgModule } from '@angular/core';
-import { WatsonService } from '../watson/watson.service';
+// import { WatsonService } from '../watson/watson.service';
 import { ActivatedRoute } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -28,13 +28,18 @@ export class NewEntryComponent implements OnInit {
     
   }
     
-    
+  journal:any;  
   result;
+  angerLevel;
+  disgustLevel;
+  fearLevel;
+  joyLevel;
+  sadnessLevel;
     
 
   getTone(){
      // let tones = this.result.document_tone.tone_categories[0].tones;
-      this.http.get('https://watson-api-explorer.mybluemix.net/tone-analyzer/api/v3/tone?text="Check out this text friend"&tones=emotion&sentences=false&version=2016-05-19').subscribe(data => {
+      this.http.get('https://watson-api-explorer.mybluemix.net/tone-analyzer/api/v3/tone?text='+this.journal+'&tones=emotion&sentences=false&version=2016-05-19').subscribe(data => {
       this.result = data.json();
       console.log('got data');
       console.log(this.result.document_tone.tone_categories[0].tones);

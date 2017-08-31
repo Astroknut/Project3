@@ -51,11 +51,8 @@
     "pg-hstore": "^2.3.2",
     "protractor": "^5.1.2",
     "require": "^2.4.20",
-<<<<<<< HEAD
     "sequelize": "^4.7.4",
-=======
-    "sequelize": "^4.8.0",
->>>>>>> newWatson
+
     "typescript": "^2.4.2",
     "watson-developer-cloud": "^2.39.0"
   },

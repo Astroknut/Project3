@@ -19,8 +19,8 @@ import { JournalRoutingModule } from './show-journal/journal-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ContentsComponent } from './contents/contents.component';
-
-import { WatsonService } from './watson/watson.service';
+import { WatsonComponent }  from './watson/watson.component'
+// import { WatsonService } from './watson/watson.service';
 
 @NgModule({
   declarations: [
@@ -34,6 +34,8 @@ import { WatsonService } from './watson/watson.service';
     ShowEntryComponent,
     SignUpComponent,
     LogInComponent,
+    ShowJournalComponent, //*********ONLY FOR TESTING**********
+    WatsonComponent,      //*********ONLY FOR TESTING**********
     ContentsComponent
   ],
   imports: [
@@ -66,8 +68,12 @@ import { WatsonService } from './watson/watson.service';
           component: NewUserComponent
         },
         {
-          path: 'newentry',
+          path: 'newentry',   //*********ONLY FOR TESTING**********
           component: NewEntryComponent
+        },
+        {
+          path: 'showjournal', //*********ONLY FOR TESTING**********
+          component:ShowJournalComponent
         }
       ]),
 
@@ -77,7 +83,7 @@ import { WatsonService } from './watson/watson.service';
     HttpModule
 
   ],
-  providers: [WatsonService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
