@@ -1,3 +1,9 @@
+.content {
+	text-align: center;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
     font-size: 200px;
