@@ -35,8 +35,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AboutMeComponent
   ],
   imports: [
-    HttpModule,
     BrowserModule.withServerTransition({appId: 'anima'}),
+    HttpModule,
     FormsModule,
     RouterModule.forRoot([
         {
