@@ -1,6 +1,6 @@
 import * as Sequelize from 'sequelize';
 
-var sequelize = new Sequelize('postgres://jverdolino@localhost:5432/project3');
+var sequelize = new Sequelize('postgres://corey@localhost:5432/project3');
 
 var Entry = sequelize.import("./entry");
 var Journal = sequelize.import('./journal');
@@ -15,7 +15,8 @@ User.hasMany(Journal);
 const db = <any>{};
 db.models = {
 	Entry,
-	Journal
+	Journal,
+	User
 };
 
 db.Sequelize = Sequelize;

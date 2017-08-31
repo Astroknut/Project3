@@ -58,18 +58,20 @@ export class AllJournalsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.journalService.allJournals()
+      .subscribe(response => {
+        this.journals = response.json();
+        if(response.json().length > 1) {
+     
+          // Journals should start with only the first element.
+          this.journals       = this.journals.slice(0,1);
 
-    this.journalService.subject$.subscribe(journals => {
-      this.journals = journals;
+          // journals_right should include everything except the first element.
+          this.journals_right = response.json();
+          this.journals_right.shift();
 
-      // Journals should start with only the first element.
-      this.journals       = this.journals.slice(0,1);
-
-      // journals_right should include everything except the first element.
-      this.journals_right = journals;
-      this.journals_right.shift();
+          this.updateSelected();
+        }
     });
-
-    this.journalService.allJournals();
   }
 }

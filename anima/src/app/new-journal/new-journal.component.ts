@@ -21,8 +21,11 @@ export class NewJournalComponent implements OnInit {
   		this.journal.invalid = true;
   	} else {
   		this.journal.invalid = false;
-      this.journalService.addJournal(this.journal);
-  		this.router.navigate(['../journal/', this.journal.id, 'new-entry']);
+      let that = this;
+      this.journalService.addJournal(this.journal)
+        .subscribe(result => {
+          that.router.navigate(['../journal/', result.json().id, 'new-entry']);
+        });
   	}
   }
 
@@ -32,8 +35,8 @@ export class NewJournalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
   	this.journal = {
-  		id: -1,
   		name: "",
   		color: "white",
       selected: false,

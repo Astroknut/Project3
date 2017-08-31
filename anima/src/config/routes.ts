@@ -1,6 +1,11 @@
 import * as express from 'express';
 import * as passport from 'passport';
 import * as ensure from 'connect-ensure-login';
+
+import { JournalsController } from '../controllers/journals';
+import { UsersController } from '../controllers/users';
+import { EntriesController } from '../controllers/entries';
+
 const router = express.Router();
 const ensureLoggedIn = ensure.ensureLoggedIn();
 
@@ -39,7 +44,7 @@ router.get(
     failureRedirect: '/'
   }),
   function(req, res) {
-  	console.log(req.user._json.sub);
+    console.log(req.user._json.sub);
     res.redirect(req.session.returnTo || '/user');
   }  
 );
@@ -50,6 +55,44 @@ router.get(
 //     userProfile: JSON.stringify(req.user, null, '  ')
 //   });
 // });
+
+//Journal routes
+
+
+//Journal Index
+router.get('/journals-index', JournalsController.index);
+
+//GET a journal
+router.get('/journal-show/:id', JournalsController.show);
+
+//CREATE a journal
+router.post('/journals-new', JournalsController.create);
+
+//UPDATE journal 
+router.put('/journals-update/:id', JournalsController.update);
+
+//DESTROY a journal
+router.delete('/journals-delete/:id', JournalsController.destroy);
+
+
+
+//Entry Routes
+
+//Entry Index
+router.get('/journal-entries/:journalId', EntriesController.showEntries);
+
+//GET a journal entry
+router.get('/entry-show/:id', EntriesController.show);
+
+//CREATE a journal entry
+router.post('/entry-new', EntriesController.create);
+
+// UPDATE a journal entry
+router.put('/entry/:id', EntriesController.update);
+
+//DESTROY a journal entry
+router.delete('/entry-delete/:id', EntriesController.destroy);
+
 
 
 export {router};
