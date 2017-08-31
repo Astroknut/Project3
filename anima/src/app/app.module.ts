@@ -35,9 +35,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AboutMeComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule.withServerTransition({appId: 'anima'}),
     FormsModule,
-    HttpModule,
     RouterModule.forRoot([
         {
           path: '',
@@ -62,6 +62,10 @@ import { AboutMeComponent } from './about-me/about-me.component';
         { 
           path: 'user',
           component: NewUserComponent
+        },
+        {
+          path: 'about',
+          component: AboutMeComponent
         }
       ]),
     JournalRoutingModule

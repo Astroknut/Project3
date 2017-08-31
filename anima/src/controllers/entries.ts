@@ -11,7 +11,7 @@ function showEntries(req, res) {
 		}
 	})
 	.then(function(entries) {
-		if(!entries) res.send('no entries found');
+		if(!entries) res.send(res, 'no entries found');
 		res.json(entries);
 	});
 }
@@ -19,6 +19,7 @@ function showEntries(req, res) {
 function show(req, res) {
 	Entry.findById(req.params.id).then(function(entry){
 		if(!entry) res.send(res, "Entry not found");
+		res.json(entry);
 	});
 }
 
@@ -26,6 +27,17 @@ function create(req, res) {
 	Entry.create(req.body).then(function(entry) {
 		if(!entry) res.send(res, "Entry not saved");
 		else res.json(entry);
+	});
+}
+
+function update(req, res) {
+	Entry.findById(req.params.id)
+	.then(function(entry) {
+		if(!entry) res.send(res, 'Entry not found');
+		else return entry.updateAttributes(req.body);
+	})
+	.then(function(entry) {
+		res.json(entry);
 	});
 }
 
@@ -42,6 +54,7 @@ function destroy(req, res) {
 const EntriesController = <any>{};
 EntriesController.showEntries = showEntries;
 EntriesController.show = show;
+EntriesController.update = update;
 EntriesController.create = create;
 EntriesController.destroy = destroy;
 

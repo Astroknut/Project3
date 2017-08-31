@@ -15,7 +15,8 @@ User.hasMany(Journal);
 const db = <any>{};
 db.models = {
 	Entry,
-	Journal
+	Journal,
+	User
 };
 
 db.Sequelize = Sequelize;

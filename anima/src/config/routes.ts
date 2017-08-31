@@ -87,6 +87,9 @@ router.get('/entry-show/:id', EntriesController.show);
 //CREATE a journal entry
 router.post('/entry-new', EntriesController.create);
 
+// UPDATE a journal entry
+router.put('/entry/:id', EntriesController.update);
+
 //DESTROY a journal entry
 router.delete('/entry-delete/:id', EntriesController.destroy);
 

@@ -24,6 +24,10 @@ export class ShowEntryComponent implements OnInit {
 
   saveEntry() {
   	this.editing = false;
+    this.journalService.updateEntry(this.entryId, this.entry)
+      .subscribe(result => {
+        console.log(result);
+      });
   }
 
   cancelEdit() {
@@ -43,6 +47,7 @@ export class ShowEntryComponent implements OnInit {
     let that = this;
     this.journalService.oneEntry(this.entryId)
       .subscribe(result => {
+        console.log(result);
         that.entry = result.json();
     });
   }

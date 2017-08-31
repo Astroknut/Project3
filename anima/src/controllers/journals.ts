@@ -3,6 +3,7 @@ import { db } from '../models';
 
 var Entry = db.models.Entry;
 var Journal = db.models.Journal;
+var User = db.models.User;
 
 function index(req, res) {
 	Journal.findAll().then(function(journals) {
