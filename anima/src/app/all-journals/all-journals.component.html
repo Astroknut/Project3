@@ -4,26 +4,33 @@
 
 <div class="journals-slider">
 	<div class="slider-button">
-		<button (click)="cycleLeft()">Left</button>
+		<button class="waves-effect waves-light btn purple lighten-2" (click)="cycleLeft()">Left</button>
 	</div>
 	<div class="journals-left">
+		<!-- TO DO: I'm pretty sure 'selected' does nothing at this point -->
 		<div *ngFor="let journal of journals_left" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalLeft(journal.id)}" [style.background-color]="journal.color">
-			{{journal.name}}
+			<div class="journal-name">
+				{{journal.name}}
+			</div>
 		</div>
 	</div>
 	<div class="journal-area">
 		<div *ngFor="let journal of journals" class="journal" [ngClass]="{'selected': journal.selected}" [style.background-color]="journal.color">
-			{{journal.name}}
-			<button [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+			<div class="journal-name">
+				{{journal.name}}
+			</div>
+			<button class="waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
 		</div>
 	</div>
 	<div class="journals-right">
 		<div *ngFor="let journal of journals_right" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalRight(journal.id)}" [style.background-color]="journal.color">
-			{{journal.name}}
+			<div class="journal-name">
+				{{journal.name}}
+			</div>
 		</div>
 	</div>
 	<div class="slider-button">
-		<button (click)="cycleRight()">Right</button>
+		<button class="waves-effect waves-light btn purple lighten-2" (click)="cycleRight()">Right</button>
 	</div>
 </div>
 
