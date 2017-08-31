@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms'
+
 
 import { AppComponent } from './app.component';
+//import { JournalService } from './journal.service';
 import { NewUserComponent } from './new-user/new-user.component';
 import { NewEntryComponent } from './new-entry/new-entry.component';
 import { NewJournalComponent } from './new-journal/new-journal.component';
@@ -33,7 +37,9 @@ import { WatsonService } from './watson/watson.service';
     ContentsComponent
   ],
   imports: [
+    BrowserModule.withServerTransition({appId: 'anima'}),
     FormsModule,
+    HttpModule,
     RouterModule.forRoot([
         {
           path: '',
@@ -54,12 +60,22 @@ import { WatsonService } from './watson/watson.service';
         {
           path: 'new-journal',
           component: NewJournalComponent
+        },
+        { 
+          path: 'user',
+          component: NewUserComponent
+        },
+        {
+          path: 'newentry',
+          component: NewEntryComponent
         }
       ]),
+
     JournalRoutingModule,
     FormsModule,
     BrowserModule.withServerTransition({appId: 'anima'}),
     HttpModule
+
   ],
   providers: [WatsonService],
   bootstrap: [AppComponent]
