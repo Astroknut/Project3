@@ -11,6 +11,7 @@ import { JournalService } from '../journal.service';
 export class ContentsComponent implements OnInit {
 
   journal;
+  entries;
   journalId;
   
   constructor(
@@ -26,12 +27,13 @@ export class ContentsComponent implements OnInit {
 
     // Grab corresponding journal from JournalService
     let that = this;
-    this.journalService.journal(this.journalId, function(result) {
-      that.journal = result;
-      
-      that.journal.entries.forEach(el => {
-        el.blurb = el.text.substring(0, 50) + "... ";
-      });
+    this.journalService.journal(this.journalId)
+      .subscribe(response => {
+        that.journal = response.json();
+        that.journal.entries.forEach(element => {
+          element.blurb = element.text.substring(0, 60) + "...";
+        })
+        //console.log(that.journal);
     });
   }
 }

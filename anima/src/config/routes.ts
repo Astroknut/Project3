@@ -79,13 +79,16 @@ router.delete('/journals-delete/:id', JournalsController.destroy);
 //Entry Routes
 
 //Entry Index
-router.get('/entry-index', EntriesController.index);
+router.get('/journal-entries/:journalId', EntriesController.showEntries);
 
 //GET a journal entry
 router.get('/entry-show/:id', EntriesController.show);
 
 //CREATE a journal entry
 router.post('/entry-new', EntriesController.create);
+
+// UPDATE a journal entry
+router.put('/entry/:id', EntriesController.update);
 
 //DESTROY a journal entry
 router.delete('/entry-delete/:id', EntriesController.destroy);

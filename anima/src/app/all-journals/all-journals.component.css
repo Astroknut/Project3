@@ -15,9 +15,13 @@
 }
 
 .journals-left, 
-.journals-right, 
+.journals-right {
+	flex: 2;
+	overflow: hidden;
+}
+
 .journal-area {
-	flex: 1;
+	flex: 3;
 	overflow: hidden;
 }
 
@@ -25,9 +29,20 @@
 	display: inline-block;
 	visibility: visible;
 	position: relative;
-	width: 300px;
+	width: 100%;
 	height: 500px;
-	background: blue;
+	border: 4px solid black;
+	border-radius: 5px;
+}
+
+.journal-name {
+	display: block;
+	margin: 10px auto;
+	background: white;
+	height: 100px;
+	width: 80%;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .journal.invisible {
@@ -37,27 +52,10 @@
 .journal.selected {
 	display: block;
 	margin: 0 auto;
-	background: red;
 }
 
-@keyframes carouselLeft {
-	0% 		{ left: 0px; }
-	100% 	{ left: 300px; }
+button {
+	display: block;
+	margin: 0 auto;
 }
 
-@keyframes carouselRight {
-	0% 		{ left: 0px; }
-	100% 	{ left: -300px; }
-}
-
-.journal.moving-left {
-	animation-name: carouselLeft;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
-
-.journal.moving-right {
-	animation-name: carouselRight;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}

@@ -1,25 +1,29 @@
 //import db from models here
 import { db } from '../models';
+
+var Entry = db.models.Entry;
 var Journal = db.models.Journal;
+var User = db.models.User;
 
 function index(req, res) {
 	Journal.findAll().then(function(journals) {
 		res.json(journals);
 	});
-} //cooment
+}
 
 function show(req, res) {
-  Journal.findById(req.params.id)
+  Journal.findById(req.params.id, {
+    include: Entry
+  })
   .then(function(journal){
     if(!journal) res.send(res, "not found");
-    //Journal.start();
-    //journal.write();
     else res.json(journal);
   });	
 }
 
 function create(req, res) {
 	Journal.create(req.body).then(function(journal){
+    console.log('saved journal: ' + journal);
     if(!journal) res.send(res, "not saved");
     else res.json(journal);
   });
