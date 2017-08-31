@@ -70,7 +70,7 @@ import { WatsonComponent }  from './watson/watson.component'
         },
         { 
           path: 'user',
-          component: NewUserComponent
+          component: AllJournalsComponent
         },
         {
 
