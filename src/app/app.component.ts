@@ -13,11 +13,11 @@ export class AppComponent {
     meta: Meta, 
     title: Title
   ) {
-  	title.setTitle('Our Very Professional Page');
+  	title.setTitle('Anima');
 
   	meta.addTags([
-  	  { name: 'author',   content: 'YOURNAMEHERE'},
-  	  { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+  	  { name: 'author',   content: 'The best Squad'},
+  	  { name: 'keywords', content: 'Journal, anima'},
   	  { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
   	]);
   }
