@@ -1,6 +1,6 @@
 import * as Sequelize from 'sequelize';
 
-var sequelize = new Sequelize('postgres://corey@localhost:5432/project3');
+var sequelize = new Sequelize(process.env.DATABASE_URL);
 
 var Entry = sequelize.import("./entry");
 var Journal = sequelize.import('./journal');
