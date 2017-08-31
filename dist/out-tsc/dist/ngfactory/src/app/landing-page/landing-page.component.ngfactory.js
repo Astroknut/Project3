@@ -13,10 +13,10 @@ var styles_LandingPageComponent = [i0.styles];
 exports.RenderType_LandingPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_LandingPageComponent, data: {} });
 function View_LandingPageComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)), (_l()(),
-            i1.ɵted(null, ['anima'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
-            i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['src', './assets/LotusFlower.png']], null, null, null, null, null)), (_l()(),
-            i1.ɵted(null, ['\n\n']))], null, null);
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 8, 'div', [['class',
+                'content']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['anima'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['src', './assets/LotusFlower.png']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n']))], null, null);
 }
 exports.View_LandingPageComponent_0 = View_LandingPageComponent_0;
 function View_LandingPageComponent_Host_0(_l) {
