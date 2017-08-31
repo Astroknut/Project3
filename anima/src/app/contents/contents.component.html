@@ -1,6 +1,6 @@
 <h3 *ngIf="journal">{{journal.name}}</h3>
 <div class="journal">
-	<div class="left-page"></div>
+	<div class="left-page" [style.background-color]="journal.color"></div>
 	<div class="right-page">
 		<h3>New Entry</h3>
 		<button [routerLink] = "['../new-entry']">Write</button>

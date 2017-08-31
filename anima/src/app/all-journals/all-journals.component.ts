@@ -69,6 +69,8 @@ export class AllJournalsComponent implements OnInit {
           // journals_right should include everything except the first element.
           this.journals_right = response.json();
           this.journals_right.shift();
+
+          this.updateSelected();
         }
     });
   }
