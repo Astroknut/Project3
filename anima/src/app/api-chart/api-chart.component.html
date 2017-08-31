@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js">
+<canvas id="myChart" width="400" height="400"></canvas>
+
+<!-- buttonRandomize = enabled; -->
+
+<div style="display: block">
+	<canvas baseChart
+      [data]="chartData"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"
+      chartType="horizontalBar">	
+ 	</canvas>
+</div>
+<button (click)="randomize()">Update</button>

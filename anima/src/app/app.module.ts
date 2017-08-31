@@ -17,6 +17,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ContentsComponent } from './contents/contents.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ApiChartComponent } from './api-chart/api-chart.component';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     SignUpComponent,
     LogInComponent,
     ContentsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ApiChartComponent
   ],
   imports: [
     FormsModule,
@@ -62,9 +66,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
         }
       ]),
     JournalRoutingModule,
+    ChartsModule,
     BrowserModule.withServerTransition({appId: 'anima'})
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
