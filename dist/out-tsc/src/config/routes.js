@@ -77,4 +77,12 @@ router.route('/show-entry')
 router.post('/update-entry', function (req, res) {
     res.send(JSON);
 });
+//DELETE a journal entry
+router.delete('/delete-entry', function (req, res) {
+    res.send(JSON);
+});
+//DELETE a journal
+router.delete('/delete-journal', function (req, res) {
+    res.send(JSON);
+});
 //# sourceMappingURL=routes.js.map

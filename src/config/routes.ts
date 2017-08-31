@@ -113,12 +113,12 @@ router.post('/update-entry', function(req,res) {
 })
 
 //DELETE a journal entry
-router.remove('/delete-entry', function(req,res) {
+router.delete('/delete-entry', function(req,res) {
 	res.send(JSON)
 })
 
 //DELETE a journal
-router.remove('/delete-journal', function(req,res) {
+router.delete('/delete-journal', function(req,res) {
 	res.send(JSON);
 })
 			

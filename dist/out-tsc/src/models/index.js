@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Sequelize = require("sequelize");
-var sequelize = new Sequelize('postgres://glnfavglxpsssx:ff7261a5374620184780aa690996db8a96583033474742236ebb5d193396fbb6@ec2-54-225-113-161.compute-1.amazonaws.com:5432/d76tla24vfd6ns');
+var sequelize = new Sequelize('postgres://corey@localhost:5432/project3');
 var Entry = sequelize.import("./entry");
 var Journal = sequelize.import('./journal');
 var User = sequelize.import('./user');
