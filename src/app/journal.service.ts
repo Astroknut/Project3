@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/Http';
-import { Observable } from 'rxjs';
-import { Subject } from 'rxjs/Subject';
+//import { Observable } from 'rxjs';
+//import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class JournalService {
