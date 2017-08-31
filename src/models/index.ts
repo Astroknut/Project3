@@ -1,7 +1,7 @@
+ import * as Sequelize from 'sequelize';
 
 if (!global.hasOwnProperty('db')) {
-  import * as Sequelize from 'sequelize'
-    , sequelize = null
+	var sequelize = null;
 
   if (process.env.DATABASE_URL) {
     // the application is executed on Heroku ... use the postgres database
