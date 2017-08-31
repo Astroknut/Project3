@@ -61,7 +61,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
         },
         { 
           path: 'user',
-          component: NewUserComponent
+          component: AllJournalsComponent
         },
         {
           path: 'about',
