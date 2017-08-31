@@ -11,8 +11,11 @@ import * as bodyParser from 'body-parser';
 import * as session from 'express-session';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import * as http from 'http';
 
 import { router } from './config/routes';
+
+import * as db from './models';
 
 const PORT = 3000;
 
@@ -84,9 +87,12 @@ app.get('*', (req, res) => {
 	res.render('index', { req });
 });
 
-
-//let sequelize = new Sequelize('postgres://' + user +'@localhost:5432/anima');
-
 app.listen(process.env.PORT || PORT, function() {
 	console.log('Express server up and running!');
 })
+
+db.sequelize.sync().then(function() {
+  http.createServer(app).listen(process.env.PORT || PORT, function(){
+    console.log('Express server up and running!');
+  });
+});
