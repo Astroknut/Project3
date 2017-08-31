@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var journal_service_1 = require("../journal.service");
-var AllJournalsComponent = (function () {
+var AllJournalsComponent = /** @class */ (function () {
     function AllJournalsComponent(journalService) {
         this.journalService = journalService;
         this.selected = 0;

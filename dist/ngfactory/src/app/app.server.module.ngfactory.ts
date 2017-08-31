@@ -91,17 +91,12 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i0.Testability,(null as any),([] as any[])),i0.ɵmpd(4608,i19.Meta,i19.Meta,
               [i18.DOCUMENT]),i0.ɵmpd(4608,i19.Title,i19.Title,[i18.DOCUMENT]),i0.ɵmpd(4608,
               i22.AnimationBuilder,i21.ɵBrowserAnimationBuilder,[i0.RendererFactory2,
-                  i19.DOCUMENT]),i0.ɵmpd(4608,i15.BrowserXhr,i15.BrowserXhr,([] as any[])),
-          i0.ɵmpd(4608,i15.ResponseOptions,i15.BaseResponseOptions,([] as any[])),
-          i0.ɵmpd(5120,i15.XSRFStrategy,i15.ɵb,([] as any[])),i0.ɵmpd(4608,i15.XHRBackend,
-              i15.XHRBackend,[i15.BrowserXhr,i15.ResponseOptions,i15.XSRFStrategy]),
-          i0.ɵmpd(4608,i15.RequestOptions,i15.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,
-              i15.Http,i15.ɵc,[i15.XHRBackend,i15.RequestOptions]),i0.ɵmpd(4608,i23.ɵi,
-              i23.ɵi,([] as any[])),i0.ɵmpd(5120,i24.ActivatedRoute,i24.ɵf,[i24.Router]),
-          i0.ɵmpd(4608,i24.NoPreloading,i24.NoPreloading,([] as any[])),i0.ɵmpd(6144,
-              i24.PreloadingStrategy,(null as any),[i24.NoPreloading]),i0.ɵmpd(135680,
-              i24.RouterPreloader,i24.RouterPreloader,[i24.Router,i0.NgModuleFactoryLoader,
-                  i0.Compiler,i0.Injector,i24.PreloadingStrategy]),i0.ɵmpd(4608,i24.PreloadAllModules,
+                  i19.DOCUMENT]),i0.ɵmpd(4608,i23.ɵi,i23.ɵi,([] as any[])),i0.ɵmpd(5120,
+              i24.ActivatedRoute,i24.ɵf,[i24.Router]),i0.ɵmpd(4608,i24.NoPreloading,
+              i24.NoPreloading,([] as any[])),i0.ɵmpd(6144,i24.PreloadingStrategy,
+              (null as any),[i24.NoPreloading]),i0.ɵmpd(135680,i24.RouterPreloader,
+              i24.RouterPreloader,[i24.Router,i0.NgModuleFactoryLoader,i0.Compiler,
+                  i0.Injector,i24.PreloadingStrategy]),i0.ɵmpd(4608,i24.PreloadAllModules,
               i24.PreloadAllModules,([] as any[])),i0.ɵmpd(5120,i24.ROUTER_INITIALIZER,
               i24.ɵi,[i24.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
             return [p0_0];
@@ -125,10 +120,9 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i19.BrowserModule,
               i19.BrowserModule,[[3,i19.BrowserModule]]),i0.ɵmpd(512,i21.NoopAnimationsModule,
               i21.NoopAnimationsModule,([] as any[])),i0.ɵmpd(512,i16.ServerModule,
-              i16.ServerModule,([] as any[])),i0.ɵmpd(512,i15.HttpModule,i15.HttpModule,
-              ([] as any[])),i0.ɵmpd(512,i23.ɵba,i23.ɵba,([] as any[])),i0.ɵmpd(512,
-              i23.FormsModule,i23.FormsModule,([] as any[])),i0.ɵmpd(1024,i24.ɵa,i24.ɵd,
-              [[3,i24.Router]]),i0.ɵmpd(512,i24.UrlSerializer,i24.DefaultUrlSerializer,
+              i16.ServerModule,([] as any[])),i0.ɵmpd(512,i23.ɵba,i23.ɵba,([] as any[])),
+          i0.ɵmpd(512,i23.FormsModule,i23.FormsModule,([] as any[])),i0.ɵmpd(1024,
+              i24.ɵa,i24.ɵd,[[3,i24.Router]]),i0.ɵmpd(512,i24.UrlSerializer,i24.DefaultUrlSerializer,
               ([] as any[])),i0.ɵmpd(512,i24.ChildrenOutletContexts,i24.ChildrenOutletContexts,
               ([] as any[])),i0.ɵmpd(256,i24.ROUTER_CONFIGURATION,{},([] as any[])),
           i0.ɵmpd(1024,i18.LocationStrategy,i24.ɵc,[i18.PlatformLocation,[2,i18.APP_BASE_HREF],
@@ -153,4 +147,4 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i17.ɵe,'XSRF-TOKEN',([] as any[])),i0.ɵmpd(256,i17.ɵf,'X-XSRF-TOKEN',
               ([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2NvcmV5L3dkaS91bml0LTMvUHJvamVjdDMvc3JjL2FwcC9hcHAuc2VydmVyLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9jb3JleS93ZGkvdW5pdC0zL1Byb2plY3QzL3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2NvcmV5L3dkaS91bml0LTMvUHJvamVjdDMvc3JjL2FwcC9hcHAuc2VydmVyLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9jb3JleS93ZGkvdW5pdC0zL1Byb2plY3QzL3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

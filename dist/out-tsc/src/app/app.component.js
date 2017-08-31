@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent(meta, title) {
         this.title = 'app';
         title.setTitle('Our Very Professional Page');

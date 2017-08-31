@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var Http_1 = require("@angular/Http");
-var JournalService = (function () {
+var http_1 = require("@angular/http");
+var JournalService = /** @class */ (function () {
     function JournalService(http) {
         this.http = http;
-        this.baseUrl = 'http://localhost:3000';
+        this.baseUrl = process.env.PORT || 'http://localhost:3000';
     }
     JournalService.prototype.journal = function (id) {
         return this.http.get(this.baseUrl + "/journal-show/" + id);
@@ -33,7 +33,7 @@ var JournalService = (function () {
     ];
     /** @nocollapse */
     JournalService.ctorParameters = function () { return [
-        { type: Http_1.Http, },
+        { type: http_1.Http, },
     ]; };
     return JournalService;
 }());

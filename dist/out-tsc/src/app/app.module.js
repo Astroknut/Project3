@@ -4,7 +4,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
-var Http_1 = require("@angular/Http");
+var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var journal_service_1 = require("./journal.service");
 var new_user_component_1 = require("./new-user/new-user.component");
@@ -19,7 +19,7 @@ var sign_up_component_1 = require("./sign-up/sign-up.component");
 var log_in_component_1 = require("./log-in/log-in.component");
 var contents_component_1 = require("./contents/contents.component");
 var about_me_component_1 = require("./about-me/about-me.component");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule.decorators = [
@@ -39,8 +39,8 @@ var AppModule = (function () {
                         about_me_component_1.AboutMeComponent
                     ],
                     imports: [
-                        Http_1.HttpModule,
                         platform_browser_1.BrowserModule.withServerTransition({ appId: 'anima' }),
+                        http_1.HttpModule,
                         forms_1.FormsModule,
                         router_1.RouterModule.forRoot([
                             {

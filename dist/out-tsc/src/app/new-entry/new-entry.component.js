@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var journal_service_1 = require("../journal.service");
 var router_1 = require("@angular/router");
-var NewEntryComponent = (function () {
+var NewEntryComponent = /** @class */ (function () {
     function NewEntryComponent(journalService, router, route) {
         this.journalService = journalService;
         this.router = router;

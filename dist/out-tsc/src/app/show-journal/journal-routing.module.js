@@ -26,7 +26,7 @@ var journalRoutes = [
         ]
     }
 ];
-var JournalRoutingModule = (function () {
+var JournalRoutingModule = /** @class */ (function () {
     function JournalRoutingModule() {
     }
     JournalRoutingModule.decorators = [

@@ -21,9 +21,9 @@ import * as i11 from './new-journal/new-journal.component.ngfactory';
 import * as i12 from './new-user/new-user.component.ngfactory';
 import * as i13 from './about-me/about-me.component.ngfactory';
 import * as i14 from './app.component.ngfactory';
-import * as i15 from '@angular/http';
-import * as i16 from '@angular/common';
-import * as i17 from '@angular/platform-browser';
+import * as i15 from '@angular/common';
+import * as i16 from '@angular/platform-browser';
+import * as i17 from '@angular/http';
 import * as i18 from '@angular/forms';
 import * as i19 from '@angular/router';
 import * as i20 from '../../../../src/app/journal.service';
@@ -46,73 +46,73 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
               i6.NewEntryComponentNgFactory,i7.LandingPageComponentNgFactory,i8.SignUpComponentNgFactory,
               i9.LogInComponentNgFactory,i10.AllJournalsComponentNgFactory,i11.NewJournalComponentNgFactory,
               i12.NewUserComponentNgFactory,i13.AboutMeComponentNgFactory,i14.AppComponentNgFactory]],
-              [3,i0.ComponentFactoryResolver],i0.NgModuleRef]),i0.ɵmpd(4608,i15.BrowserXhr,
-          i15.BrowserXhr,([] as any[])),i0.ɵmpd(4608,i15.ResponseOptions,i15.BaseResponseOptions,
-          ([] as any[])),i0.ɵmpd(5120,i15.XSRFStrategy,i15.ɵb,([] as any[])),i0.ɵmpd(4608,
-          i15.XHRBackend,i15.XHRBackend,[i15.BrowserXhr,i15.ResponseOptions,i15.XSRFStrategy]),
-          i0.ɵmpd(4608,i15.RequestOptions,i15.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,
-              i15.Http,i15.ɵc,[i15.XHRBackend,i15.RequestOptions]),i0.ɵmpd(5120,i0.LOCALE_ID,
-              i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i16.NgLocalization,i16.NgLocaleLocalization,
-              [i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,i0.ɵk,([] as any[])),
-          i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),i0.ɵmpd(4608,i17.DomSanitizer,
-              i17.ɵe,[i16.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i17.DomSanitizer]),
-          i0.ɵmpd(4608,i17.HAMMER_GESTURE_CONFIG,i17.HammerGestureConfig,([] as any[])),
-          i0.ɵmpd(5120,i17.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
-            return [new i17.ɵDomEventsPlugin(p0_0),new i17.ɵKeyEventsPlugin(p1_0),
-                new i17.ɵHammerGesturesPlugin(p2_0,p2_1)];
-          },[i16.DOCUMENT,i16.DOCUMENT,i16.DOCUMENT,i17.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
-              i17.EventManager,i17.EventManager,[i17.EVENT_MANAGER_PLUGINS,i0.NgZone]),
-          i0.ɵmpd(135680,i17.ɵDomSharedStylesHost,i17.ɵDomSharedStylesHost,[i16.DOCUMENT]),
-          i0.ɵmpd(4608,i17.ɵDomRendererFactory2,i17.ɵDomRendererFactory2,[i17.EventManager,
-              i17.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
-              [i17.ɵDomRendererFactory2]),i0.ɵmpd(6144,i17.ɵSharedStylesHost,(null as any),
-              [i17.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
-              [i0.NgZone]),i0.ɵmpd(4608,i17.Meta,i17.Meta,[i16.DOCUMENT]),i0.ɵmpd(4608,
-              i17.Title,i17.Title,[i16.DOCUMENT]),i0.ɵmpd(4608,i18.ɵi,i18.ɵi,([] as any[])),
-          i0.ɵmpd(5120,i19.ActivatedRoute,i19.ɵf,[i19.Router]),i0.ɵmpd(4608,i19.NoPreloading,
-              i19.NoPreloading,([] as any[])),i0.ɵmpd(6144,i19.PreloadingStrategy,
-              (null as any),[i19.NoPreloading]),i0.ɵmpd(135680,i19.RouterPreloader,
-              i19.RouterPreloader,[i19.Router,i0.NgModuleFactoryLoader,i0.Compiler,
-                  i0.Injector,i19.PreloadingStrategy]),i0.ɵmpd(4608,i19.PreloadAllModules,
+              [3,i0.ComponentFactoryResolver],i0.NgModuleRef]),i0.ɵmpd(5120,i0.LOCALE_ID,
+          i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i15.NgLocalization,i15.NgLocaleLocalization,
+          [i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,i0.ɵk,([] as any[])),i0.ɵmpd(5120,
+          i0.KeyValueDiffers,i0.ɵl,([] as any[])),i0.ɵmpd(4608,i16.DomSanitizer,i16.ɵe,
+          [i15.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i16.DomSanitizer]),
+          i0.ɵmpd(4608,i16.HAMMER_GESTURE_CONFIG,i16.HammerGestureConfig,([] as any[])),
+          i0.ɵmpd(5120,i16.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
+            return [new i16.ɵDomEventsPlugin(p0_0),new i16.ɵKeyEventsPlugin(p1_0),
+                new i16.ɵHammerGesturesPlugin(p2_0,p2_1)];
+          },[i15.DOCUMENT,i15.DOCUMENT,i15.DOCUMENT,i16.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
+              i16.EventManager,i16.EventManager,[i16.EVENT_MANAGER_PLUGINS,i0.NgZone]),
+          i0.ɵmpd(135680,i16.ɵDomSharedStylesHost,i16.ɵDomSharedStylesHost,[i15.DOCUMENT]),
+          i0.ɵmpd(4608,i16.ɵDomRendererFactory2,i16.ɵDomRendererFactory2,[i16.EventManager,
+              i16.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
+              [i16.ɵDomRendererFactory2]),i0.ɵmpd(6144,i16.ɵSharedStylesHost,(null as any),
+              [i16.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
+              [i0.NgZone]),i0.ɵmpd(4608,i16.Meta,i16.Meta,[i15.DOCUMENT]),i0.ɵmpd(4608,
+              i16.Title,i16.Title,[i15.DOCUMENT]),i0.ɵmpd(4608,i17.BrowserXhr,i17.BrowserXhr,
+              ([] as any[])),i0.ɵmpd(4608,i17.ResponseOptions,i17.BaseResponseOptions,
+              ([] as any[])),i0.ɵmpd(5120,i17.XSRFStrategy,i17.ɵb,([] as any[])),i0.ɵmpd(4608,
+              i17.XHRBackend,i17.XHRBackend,[i17.BrowserXhr,i17.ResponseOptions,i17.XSRFStrategy]),
+          i0.ɵmpd(4608,i17.RequestOptions,i17.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,
+              i17.Http,i17.ɵc,[i17.XHRBackend,i17.RequestOptions]),i0.ɵmpd(4608,i18.ɵi,
+              i18.ɵi,([] as any[])),i0.ɵmpd(5120,i19.ActivatedRoute,i19.ɵf,[i19.Router]),
+          i0.ɵmpd(4608,i19.NoPreloading,i19.NoPreloading,([] as any[])),i0.ɵmpd(6144,
+              i19.PreloadingStrategy,(null as any),[i19.NoPreloading]),i0.ɵmpd(135680,
+              i19.RouterPreloader,i19.RouterPreloader,[i19.Router,i0.NgModuleFactoryLoader,
+                  i0.Compiler,i0.Injector,i19.PreloadingStrategy]),i0.ɵmpd(4608,i19.PreloadAllModules,
               i19.PreloadAllModules,([] as any[])),i0.ɵmpd(5120,i19.ROUTER_INITIALIZER,
               i19.ɵi,[i19.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
             return [p0_0];
           },[i19.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i20.JournalService,i20.JournalService,
-              [i15.Http]),i0.ɵmpd(512,i15.HttpModule,i15.HttpModule,([] as any[])),
-          i0.ɵmpd(512,i16.CommonModule,i16.CommonModule,([] as any[])),i0.ɵmpd(1024,
-              i0.ErrorHandler,i17.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,() => {
-            return [i19.ɵb()];
-          },([] as any[])),i0.ɵmpd(256,i0.APP_ID,'anima',([] as any[])),i0.ɵmpd(2048,
-              i17.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i19.ɵg,i19.ɵg,
+              [i17.Http]),i0.ɵmpd(512,i15.CommonModule,i15.CommonModule,([] as any[])),
+          i0.ɵmpd(1024,i0.ErrorHandler,i16.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,
+              () => {
+                return [i19.ɵb()];
+              },([] as any[])),i0.ɵmpd(256,i0.APP_ID,'anima',([] as any[])),i0.ɵmpd(2048,
+              i16.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i19.ɵg,i19.ɵg,
               [i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any,p1_0:any,
               p1_1:any,p1_2:any,p2_0:any) => {
-            return [i17.ɵc(p0_0,p0_1),i17.ɵf(p1_0,p1_1,p1_2),i19.ɵh(p2_0)];
-          },[[2,i17.NgProbeToken],[2,i0.NgProbeToken],i17.ɵTRANSITION_ID,i16.DOCUMENT,
+            return [i16.ɵc(p0_0,p0_1),i16.ɵf(p1_0,p1_1,p1_2),i19.ɵh(p2_0)];
+          },[[2,i16.NgProbeToken],[2,i0.NgProbeToken],i16.ɵTRANSITION_ID,i15.DOCUMENT,
               i0.Injector,i19.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
               [[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,
               i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),
           i0.ɵmpd(2048,i0.ApplicationRef,(null as any),[i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,
-              i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i17.BrowserModule,
-              i17.BrowserModule,[[3,i17.BrowserModule]]),i0.ɵmpd(512,i18.ɵba,i18.ɵba,
-              ([] as any[])),i0.ɵmpd(512,i18.FormsModule,i18.FormsModule,([] as any[])),
-          i0.ɵmpd(1024,i19.ɵa,i19.ɵd,[[3,i19.Router]]),i0.ɵmpd(512,i19.UrlSerializer,
-              i19.DefaultUrlSerializer,([] as any[])),i0.ɵmpd(512,i19.ChildrenOutletContexts,
-              i19.ChildrenOutletContexts,([] as any[])),i0.ɵmpd(256,i19.ROUTER_CONFIGURATION,
-              {},([] as any[])),i0.ɵmpd(1024,i16.LocationStrategy,i19.ɵc,[i16.PlatformLocation,
-              [2,i16.APP_BASE_HREF],i19.ROUTER_CONFIGURATION]),i0.ɵmpd(512,i16.Location,
-              i16.Location,[i16.LocationStrategy]),i0.ɵmpd(512,i0.Compiler,i0.Compiler,
-              ([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,i0.SystemJsNgModuleLoader,
-              [i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),i0.ɵmpd(1024,i19.ROUTES,
-              () => {
-                return [[{path:'journal/:id',component:i21.ShowJournalComponent,children:[{path:'contents',
-                    component:i22.ContentsComponent},{path:'show-entry/:id',component:i23.ShowEntryComponent},
-                    {path:'new-entry',component:i24.NewEntryComponent}]}],[{path:'',
-                    component:i25.LandingPageComponent},{path:'sign-up',component:i26.SignUpComponent},
-                    {path:'log-in',component:i27.LogInComponent},{path:'all-journals',
-                        component:i28.AllJournalsComponent},{path:'new-journal',component:i29.NewJournalComponent},
-                    {path:'user',component:i30.NewUserComponent},{path:'about',component:i31.AboutMeComponent}]];
-              },([] as any[])),i0.ɵmpd(1024,i19.Router,i19.ɵe,[i0.ApplicationRef,i19.UrlSerializer,
-              i19.ChildrenOutletContexts,i16.Location,i0.Injector,i0.NgModuleFactoryLoader,
+              i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i16.BrowserModule,
+              i16.BrowserModule,[[3,i16.BrowserModule]]),i0.ɵmpd(512,i17.HttpModule,
+              i17.HttpModule,([] as any[])),i0.ɵmpd(512,i18.ɵba,i18.ɵba,([] as any[])),
+          i0.ɵmpd(512,i18.FormsModule,i18.FormsModule,([] as any[])),i0.ɵmpd(1024,
+              i19.ɵa,i19.ɵd,[[3,i19.Router]]),i0.ɵmpd(512,i19.UrlSerializer,i19.DefaultUrlSerializer,
+              ([] as any[])),i0.ɵmpd(512,i19.ChildrenOutletContexts,i19.ChildrenOutletContexts,
+              ([] as any[])),i0.ɵmpd(256,i19.ROUTER_CONFIGURATION,{},([] as any[])),
+          i0.ɵmpd(1024,i15.LocationStrategy,i19.ɵc,[i15.PlatformLocation,[2,i15.APP_BASE_HREF],
+              i19.ROUTER_CONFIGURATION]),i0.ɵmpd(512,i15.Location,i15.Location,[i15.LocationStrategy]),
+          i0.ɵmpd(512,i0.Compiler,i0.Compiler,([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,
+              i0.SystemJsNgModuleLoader,[i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),
+          i0.ɵmpd(1024,i19.ROUTES,() => {
+            return [[{path:'journal/:id',component:i21.ShowJournalComponent,children:[{path:'contents',
+                component:i22.ContentsComponent},{path:'show-entry/:id',component:i23.ShowEntryComponent},
+                {path:'new-entry',component:i24.NewEntryComponent}]}],[{path:'',component:i25.LandingPageComponent},
+                {path:'sign-up',component:i26.SignUpComponent},{path:'log-in',component:i27.LogInComponent},
+                {path:'all-journals',component:i28.AllJournalsComponent},{path:'new-journal',
+                    component:i29.NewJournalComponent},{path:'user',component:i30.NewUserComponent},
+                {path:'about',component:i31.AboutMeComponent}]];
+          },([] as any[])),i0.ɵmpd(1024,i19.Router,i19.ɵe,[i0.ApplicationRef,i19.UrlSerializer,
+              i19.ChildrenOutletContexts,i15.Location,i0.Injector,i0.NgModuleFactoryLoader,
               i0.Compiler,i19.ROUTES,i19.ROUTER_CONFIGURATION,[2,i19.UrlHandlingStrategy],
               [2,i19.RouteReuseStrategy]]),i0.ɵmpd(512,i19.RouterModule,i19.RouterModule,
               [[2,i19.ɵa],[2,i19.Router]]),i0.ɵmpd(512,i32.JournalRoutingModule,i32.JournalRoutingModule,

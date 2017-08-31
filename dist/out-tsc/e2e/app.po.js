@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var protractor_1 = require("protractor");
-var AnimaPage = (function () {
+var AnimaPage = /** @class */ (function () {
     function AnimaPage() {
     }
     AnimaPage.prototype.navigateTo = function () {

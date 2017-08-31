@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var LogInComponent = (function () {
+var LogInComponent = /** @class */ (function () {
     function LogInComponent() {
     }
     LogInComponent.prototype.ngOnInit = function () {
