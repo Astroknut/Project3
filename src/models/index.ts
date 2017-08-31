@@ -1,25 +1,36 @@
-import * as Sequelize from 'sequelize';
 
-var sequelize = new Sequelize('postgres://corey@localhost:5432/project3');
+if (!global.hasOwnProperty('db')) {
+  import * as Sequelize from 'sequelize'
+    , sequelize = null
 
-var Entry = sequelize.import("./entry");
-var Journal = sequelize.import('./journal');
-var User = sequelize.import('./user');
+  if (process.env.DATABASE_URL) {
+    // the application is executed on Heroku ... use the postgres database
+    sequelize = new Sequelize(process.env.DATABASE_URL, {
+      dialect:  'postgres',
+      protocol: 'postgres',
+      port:     match[4],
+      host:     match[3],
+      logging:  true //false
+    })
+  } else {
+    // the application is executed on the local machine ... use mysql
+    sequelize = new Sequelize('postgres://corey@localhost:5432/project3')
+  }
 
-Entry.belongsTo(Journal);
-Journal.hasMany(Entry);
+  global.db = {
+    Sequelize: Sequelize,
+    sequelize: sequelize,
+    models: {
+    	Entry: sequelize.import("./entry"),
+    	Journal: sequelize.import('./journal'),
+    	User: sequelize.import('./user')
+    }
+  }
+  global.db.models.Entry.belongsTo(global.db.models.Journal);
+  global.db.models.Journal.hasMany(global.db.models.Entry);
 
-Journal.belongsTo(User);
-User.hasMany(Journal);
+  global.db.models.Journal.belongsTo(global.db.models.User);
+  global.db.models.User.hasMany(global.db.models.Journal);
+}
 
-const db = <any>{};
-db.models = {
-	Entry,
-	Journal,
-	User
-};
-
-db.Sequelize = Sequelize;
-db.sequelize = sequelize;
-
-export {db};
+export { global.db }
