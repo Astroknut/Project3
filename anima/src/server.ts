@@ -11,14 +11,16 @@ import * as bodyParser from 'body-parser';
 import * as session from 'express-session';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-
+//import * as httpProxy from 'http-proxy'
 import { router } from './config/routes';
+
 
 const PORT = 3000;
 
 enableProdMode();
 
 const app = express();
+
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({'extended': 'true'}));
@@ -83,6 +85,8 @@ app.get('*.*', express.static(join(__dirname, '..', 'dist')));
 app.get('*', (req, res) => {
 	res.render('index', { req });
 });
+
+
 
 
 //let sequelize = new Sequelize('postgres://' + user +'@localhost:5432/anima');

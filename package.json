@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "ng build --prod && ngc",
-    "start": "ts-node src/server.ts"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -34,30 +33,20 @@
     "@angular/router": "^4.3.6",
     "@types/node": "^8.0.25",
     "angular": "^1.6.6",
-    "angular2-materialize": "^15.1.9",
     "body-parser": "^1.17.2",
-    "connect-ensure-login": "^0.1.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
-    "hammerjs": "^2.0.8",
-    "jquery": "^3.2.1",
-    "materialize-css": "^0.100.1",
-    "mdi": "^2.0.46",
-    "ng2-materialize": "^1.5.1",
+    "http-proxy": "^1.16.2",
     "passport": "^0.4.0",
-    "passport-auth0": "^0.6.0",
     "pg": "^7.2.0",
     "pg-hstore": "^2.3.2",
     "protractor": "^5.1.2",
     "require": "^2.4.20",
     "sequelize": "^4.7.4",
-
-    "typescript": "^2.4.2",
-    "watson-developer-cloud": "^2.39.0"
+    "typescript": "^2.4.2"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.5.54",
     "ts-node": "^3.3.0"
   }
 }

@@ -1,0 +1,7 @@
+{
+	"/api/*":{
+		"target":"https://gateway.watsonplatform.net/tone-analyzer",
+		"secure": true,
+		"logLevel":"debug"
+	}
+}
