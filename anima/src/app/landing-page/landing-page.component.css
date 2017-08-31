@@ -1,12 +1,13 @@
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
     font-size: 200px;
-    position: relative;
-    left: 475px;
+    min-width: 400px;
+    display: block;
+    margin: 0 auto;
     color:  #ffb3ff;
 }
 
 img {
-	position: relative;
-	right: -525px;
+	display: block;
+	margin: 0 auto;
 }
