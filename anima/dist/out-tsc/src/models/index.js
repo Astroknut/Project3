@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Sequelize = require("sequelize");
-var sequelize = new Sequelize('postgres://corey@localhost:5432/project3');
+//***************CHANGE LOCALHOST TO <your local host>@localhost...*********
+var sequelize = new Sequelize('postgres://Mark@localhost:5432/project3');
 var Entry = sequelize.import("./entry");
 var Journal = sequelize.import('./journal');
 var User = sequelize.import('./user');

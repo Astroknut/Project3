@@ -15,15 +15,32 @@ export const RenderType_LandingPageComponent:i1.RendererType2 = i1.ɵcrt({encaps
 export function View_LandingPageComponent_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),8,'div',[['class',
       'content']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          1,'h1',([] as any[]),(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i1.ɵted((null as any),['anima'])),(_l()(),i1.ɵted((null as any),
-          ['\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),0,'br',([] as any[]),
+      (_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          1,'h1',[['class','center-align']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['anima'])),
+      (_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          0,'br',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),0,'img',[['class','center-align'],['src','./assets/LotusFlower.png']],
           (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          0,'img',[['src','./assets/LotusFlower.png']],(null as any),(null as any),
+      (_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),['\n\n\n'])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),13,'div',[['class','landingText']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          1,'h6',[['class','center-align']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['Welcome to anima! A journaling application that really cares.'])),
+      (_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          0,'br',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),6,'p',[['class','center-align']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'a',[['href','login']],(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n'])),(_l()(),i1.ɵted((null as any),['\n\n']))],(null as any),(null as any));
+          ['Log in'])),(_l()(),i1.ɵted((null as any),[' or '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'a',[['href','login']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Sign up'])),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),
+          ['\n\n\n\n']))],(null as any),(null as any));
 }
 export function View_LandingPageComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-landing-page',
@@ -35,4 +52,4 @@ export function View_LandingPageComponent_Host_0(_l:any):i1.ɵViewDefinition {
 }
 export const LandingPageComponentNgFactory:i1.ComponentFactory<i2.LandingPageComponent> = i1.ɵccf('app-landing-page',
     i2.LandingPageComponent,View_LandingPageComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2NvcmV5L3dkaS91bml0LTMvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9sYW5kaW5nLXBhZ2UvbGFuZGluZy1wYWdlLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9jb3JleS93ZGkvdW5pdC0zL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvbGFuZGluZy1wYWdlL2xhbmRpbmctcGFnZS5jb21wb25lbnQudHMiLCJuZzovLy9Vc2Vycy9jb3JleS93ZGkvdW5pdC0zL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvbGFuZGluZy1wYWdlL2xhbmRpbmctcGFnZS5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2NvcmV5L3dkaS91bml0LTMvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9sYW5kaW5nLXBhZ2UvbGFuZGluZy1wYWdlLmNvbXBvbmVudC50cy5MYW5kaW5nUGFnZUNvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgY2xhc3M9XCJjb250ZW50XCI+XG5cdDxoMT5hbmltYTwvaDE+XG5cdDxicj5cblx0PGltZyBzcmM9XCIuL2Fzc2V0cy9Mb3R1c0Zsb3dlci5wbmdcIj5cbjwvZGl2PlxuXG4iLCI8YXBwLWxhbmRpbmctcGFnZT48L2FwcC1sYW5kaW5nLXBhZ2U+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7O29CQ0FBO01BQUE7TUFBcUIsd0NBQ3BCO1VBQUE7VUFBQSxnQkFBSSwwQ0FBVTtVQUFBLFVBQ2Q7VUFBQTtNQUFJLHdDQUNKO1VBQUE7VUFBQSw0Q0FBb0M7VUFBQSxTQUMvQjs7O29CQ0pOO01BQUE7cUNBQUEsVUFBQTtNQUFBO0lBQUE7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvbGFuZGluZy1wYWdlL2xhbmRpbmctcGFnZS5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvTWFyay9XREkvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9sYW5kaW5nLXBhZ2UvbGFuZGluZy1wYWdlLmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvbGFuZGluZy1wYWdlL2xhbmRpbmctcGFnZS5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvbGFuZGluZy1wYWdlL2xhbmRpbmctcGFnZS5jb21wb25lbnQudHMuTGFuZGluZ1BhZ2VDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiY29udGVudFwiPlxuICA8aDEgY2xhc3M9J2NlbnRlci1hbGlnbic+YW5pbWE8L2gxPlxuICA8YnI+XG4gIDxpbWcgY2xhc3M9J2NlbnRlci1hbGlnbicgc3JjPVwiLi9hc3NldHMvTG90dXNGbG93ZXIucG5nXCI+XG48L2Rpdj5cblxuXG48ZGl2IGNsYXNzPSdsYW5kaW5nVGV4dCc+XG4gIDxoNiBjbGFzcz0nY2VudGVyLWFsaWduJz5XZWxjb21lIHRvIGFuaW1hISBBIGpvdXJuYWxpbmcgYXBwbGljYXRpb24gdGhhdCByZWFsbHkgY2FyZXMuPC9oNj5cbiAgPGJyPlxuICA8cCBjbGFzcz0nY2VudGVyLWFsaWduJz48YSBocmVmPVwibG9naW5cIj5Mb2cgaW48L2E+IG9yIDxhIGhyZWY9XCJsb2dpblwiPlNpZ24gdXA8L2E+XG48L2Rpdj5cblxuXG5cbiIsIjxhcHAtbGFuZGluZy1wYWdlPjwvYXBwLWxhbmRpbmctcGFnZT4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtNQUFxQix5Q0FDbkI7VUFBQTtVQUFBLDhCQUF5QjtNQUFVLHlDQUNuQztVQUFBO1VBQUEsZ0JBQUkseUNBQ0o7VUFBQTtVQUFBO01BQXlELHVDQUNyRDtNQUdOO1VBQUE7TUFBeUIseUNBQ3ZCO1VBQUE7VUFBQSw4QkFBeUI7TUFBa0UseUNBQzNGO1VBQUE7VUFBQSxnQkFBSSx5Q0FDSjtVQUFBO1VBQUEsMERBQXdCO1VBQUE7VUFBQSw0Q0FBZ0I7VUFBQSxhQUFVLHlDQUFJO1VBQUE7VUFBQSw0Q0FBZ0I7VUFBQSxjQUFXLHVDQUM3RTtVQUFBOzs7b0JDWE47TUFBQTtxQ0FBQSxVQUFBO01BQUE7SUFBQTs7OzsifQ==

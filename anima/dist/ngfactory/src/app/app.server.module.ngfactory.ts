@@ -106,13 +106,15 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
           },([] as any[])),i0.ɵmpd(256,i0.APP_ID,'anima',([] as any[])),i0.ɵmpd(2048,
               i18.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i23.ɵg,i23.ɵg,
               [i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any,p1_0:any,
-              p1_1:any,p1_2:any,p2_0:any) => {
-            return [i18.ɵc(p0_0,p0_1),i18.ɵf(p1_0,p1_1,p1_2),i23.ɵh(p2_0)];
+              p1_1:any,p1_2:any,p2_0:any,p3_0:any,p3_1:any,p3_2:any) => {
+            return [i18.ɵc(p0_0,p0_1),i18.ɵf(p1_0,p1_1,p1_2),i23.ɵh(p2_0),i18.ɵf(p3_0,
+                p3_1,p3_2)];
           },[[2,i18.NgProbeToken],[2,i0.NgProbeToken],i18.ɵTRANSITION_ID,i17.DOCUMENT,
-              i0.Injector,i23.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
-              [[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,
-              i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),
-          i0.ɵmpd(2048,i0.ApplicationRef,(null as any),[i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,
+              i0.Injector,i23.ɵg,i18.ɵTRANSITION_ID,i17.DOCUMENT,i0.Injector]),i0.ɵmpd(512,
+              i0.ApplicationInitStatus,i0.ApplicationInitStatus,[[2,i0.APP_INITIALIZER]]),
+          i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,i0.Injector,i0.ErrorHandler,
+              i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),i0.ɵmpd(2048,
+              i0.ApplicationRef,(null as any),[i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,
               i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i18.BrowserModule,
               i18.BrowserModule,[[3,i18.BrowserModule]]),i0.ɵmpd(512,i20.NoopAnimationsModule,
               i20.NoopAnimationsModule,([] as any[])),i0.ɵmpd(512,i15.ServerModule,
@@ -132,7 +134,8 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
                 {path:'sign-up',component:i30.SignUpComponent},{path:'log-in',component:i31.LogInComponent},
                 {path:'all-journals',component:i32.AllJournalsComponent},{path:'new-journal',
                     component:i33.NewJournalComponent},{path:'user',component:i32.AllJournalsComponent},
-                {path:'about',component:i34.AboutMeComponent}]];
+                {path:'about',component:i34.AboutMeComponent},{path:'newentry',component:i28.NewEntryComponent},
+                {path:'showjournal',component:i25.ShowJournalComponent}]];
           },([] as any[])),i0.ɵmpd(1024,i23.Router,i23.ɵe,[i0.ApplicationRef,i23.UrlSerializer,
               i23.ChildrenOutletContexts,i17.Location,i0.Injector,i0.NgModuleFactoryLoader,
               i0.Compiler,i23.ROUTES,i23.ROUTER_CONFIGURATION,[2,i23.UrlHandlingStrategy],
@@ -143,4 +146,4 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i16.ɵe,'XSRF-TOKEN',([] as any[])),i0.ɵmpd(256,i16.ɵf,'X-XSRF-TOKEN',
               ([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2NvcmV5L3dkaS91bml0LTMvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9hcHAuc2VydmVyLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9jb3JleS93ZGkvdW5pdC0zL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvTWFyay9XREkvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9hcHAuc2VydmVyLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9

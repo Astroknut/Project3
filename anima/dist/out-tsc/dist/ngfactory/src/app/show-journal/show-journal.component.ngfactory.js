@@ -10,6 +10,9 @@ var i0 = require("./show-journal.component.css.shim.ngstyle");
 var i1 = require("@angular/core");
 var i2 = require("@angular/router");
 var i3 = require("../../../../../src/app/show-journal/show-journal.component");
+var i4 = require("../../../../../src/app/new-entry/new-entry.component");
+var i5 = require("@angular/http");
+var i6 = require("../../../../../src/app/journal.service");
 var styles_ShowJournalComponent = [i0.styles];
 exports.RenderType_ShowJournalComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_ShowJournalComponent, data: {} });
@@ -23,7 +26,15 @@ function View_ShowJournalComponent_0(_l) {
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, 'routerLink'] }, null), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['Journals'])), (_l()(), i1.ɵted(null, ['\n\n\n']))], function (_ck, _v) {
+        }, null, null)), i1.ɵdid(16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, 'routerLink'] }, null), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['Journals'])), (_l()(), i1.ɵted(null, ['\n\n\n'])), (_l()(), i1.ɵeld(0, null, null, 1, 'button', [['type', 'button']], null, [[null, 'click']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('click' === en)) {
+                var pd_0 = (_co.test1() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), (_l()(), i1.ɵted(null, ['This button']))], function (_ck, _v) {
         _ck(_v, 1, 0);
         var currVal_0 = _ck(_v, 6, 0, '../../all-journals');
         _ck(_v, 5, 0, currVal_0);
@@ -31,8 +42,9 @@ function View_ShowJournalComponent_0(_l) {
 }
 exports.View_ShowJournalComponent_0 = View_ShowJournalComponent_0;
 function View_ShowJournalComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-show-journal', [], null, null, null, View_ShowJournalComponent_0, exports.RenderType_ShowJournalComponent)), i1.ɵdid(114688, null, 0, i3.ShowJournalComponent, [], null, null)], function (_ck, _v) {
-        _ck(_v, 1, 0);
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 2, 'app-show-journal', [], null, null, null, View_ShowJournalComponent_0, exports.RenderType_ShowJournalComponent)), i1.ɵprd(512, null, i4.NewEntryComponent, i4.NewEntryComponent, [i5.Http, i6.JournalService, i2.Router, i2.ActivatedRoute]),
+        i1.ɵdid(114688, null, 0, i3.ShowJournalComponent, [i4.NewEntryComponent], null, null)], function (_ck, _v) {
+        _ck(_v, 2, 0);
     }, null);
 }
 exports.View_ShowJournalComponent_Host_0 = View_ShowJournalComponent_Host_0;

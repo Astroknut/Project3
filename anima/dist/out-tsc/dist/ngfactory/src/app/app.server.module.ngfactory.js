@@ -74,12 +74,12 @@ exports.AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent
         i0.ɵmpd(512, i16.HttpClientXsrfModule, i16.HttpClientXsrfModule, []),
         i0.ɵmpd(512, i16.HttpClientModule, i16.HttpClientModule, []), i0.ɵmpd(512, i17.CommonModule, i17.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i18.ɵa, []), i0.ɵmpd(1024, i0.NgProbeToken, function () {
             return [i23.ɵb()];
-        }, []), i0.ɵmpd(256, i0.APP_ID, 'anima', []), i0.ɵmpd(2048, i18.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i23.ɵg, i23.ɵg, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p0_1, p1_0, p1_1, p1_2, p2_0) {
-            return [i18.ɵc(p0_0, p0_1), i18.ɵf(p1_0, p1_1, p1_2), i23.ɵh(p2_0)];
+        }, []), i0.ɵmpd(256, i0.APP_ID, 'anima', []), i0.ɵmpd(2048, i18.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i23.ɵg, i23.ɵg, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p0_1, p1_0, p1_1, p1_2, p2_0, p3_0, p3_1, p3_2) {
+            return [i18.ɵc(p0_0, p0_1), i18.ɵf(p1_0, p1_1, p1_2), i23.ɵh(p2_0), i18.ɵf(p3_0, p3_1, p3_2)];
         }, [[2, i18.NgProbeToken], [2, i0.NgProbeToken], i18.ɵTRANSITION_ID, i17.DOCUMENT,
-            i0.Injector, i23.ɵg]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole,
-            i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]),
-        i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i18.BrowserModule, i18.BrowserModule, [[3, i18.BrowserModule]]), i0.ɵmpd(512, i20.NoopAnimationsModule, i20.NoopAnimationsModule, []), i0.ɵmpd(512, i15.ServerModule, i15.ServerModule, []), i0.ɵmpd(512, i22.ɵba, i22.ɵba, []),
+            i0.Injector, i23.ɵg, i18.ɵTRANSITION_ID, i17.DOCUMENT, i0.Injector]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]),
+        i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler,
+            i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i18.BrowserModule, i18.BrowserModule, [[3, i18.BrowserModule]]), i0.ɵmpd(512, i20.NoopAnimationsModule, i20.NoopAnimationsModule, []), i0.ɵmpd(512, i15.ServerModule, i15.ServerModule, []), i0.ɵmpd(512, i22.ɵba, i22.ɵba, []),
         i0.ɵmpd(512, i22.FormsModule, i22.FormsModule, []), i0.ɵmpd(1024, i23.ɵa, i23.ɵd, [[3, i23.Router]]), i0.ɵmpd(512, i23.UrlSerializer, i23.DefaultUrlSerializer, []), i0.ɵmpd(512, i23.ChildrenOutletContexts, i23.ChildrenOutletContexts, []), i0.ɵmpd(256, i23.ROUTER_CONFIGURATION, {}, []),
         i0.ɵmpd(1024, i17.LocationStrategy, i23.ɵc, [i17.PlatformLocation, [2, i17.APP_BASE_HREF],
             i23.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i17.Location, i17.Location, [i17.LocationStrategy]),
@@ -91,7 +91,8 @@ exports.AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent
                     { path: 'sign-up', component: i30.SignUpComponent }, { path: 'log-in', component: i31.LogInComponent },
                     { path: 'all-journals', component: i32.AllJournalsComponent }, { path: 'new-journal',
                         component: i33.NewJournalComponent }, { path: 'user', component: i32.AllJournalsComponent },
-                    { path: 'about', component: i34.AboutMeComponent }]];
+                    { path: 'about', component: i34.AboutMeComponent }, { path: 'newentry', component: i28.NewEntryComponent },
+                    { path: 'showjournal', component: i25.ShowJournalComponent }]];
         }, []), i0.ɵmpd(1024, i23.Router, i23.ɵe, [i0.ApplicationRef, i23.UrlSerializer,
             i23.ChildrenOutletContexts, i17.Location, i0.Injector, i0.NgModuleFactoryLoader,
             i0.Compiler, i23.ROUTES, i23.ROUTER_CONFIGURATION, [2, i23.UrlHandlingStrategy],

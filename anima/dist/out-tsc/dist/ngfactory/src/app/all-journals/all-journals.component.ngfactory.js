@@ -138,26 +138,32 @@ function View_AllJournalsComponent_6(_l) {
     });
 }
 function View_AllJournalsComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 7, 'p', [], null, null, null, null, null)), (_l()(),
-            i1.ɵted(null, ['\n   '])), (_l()(), i1.ɵeld(0, null, null, 4, 'a', [['class', 'btn-floating btn-large waves-effect waves-light red']], [[1,
-                'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
+                'fixed-action-btn horizontal']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 4, 'a', [['class', 'btn-floating btn-large green']], null, null, null, null, null)), (_l()(),
+            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 1, 'i', [['class', 'large material-icons']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['?'])), (_l()(),
+            i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'ul', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)),
+        (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['ADD a new journal or click on a journal to continue!'])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 7, 'p', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n   '])), (_l()(), i1.ɵeld(0, null, null, 4, 'a', [['class', 'btn-floating btn-large waves-effect waves-light red']], [[1, 'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 3).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+                var pd_0 = (i1.ɵnov(_v, 19).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), i1.ɵpad(1), (_l()(), i1.ɵeld(0, null, null, 1, 'i', [['class', 'material-icons']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['add'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵeld(0, null, null, 32, 'div', [['class', 'journals-slider']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])),
-        (_l()(), i1.ɵeld(0, null, null, 4, 'div', [['class', 'slider-button']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'button', [['class', 'waves-effect waves-light btn purple lighten-2']], null, [[null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (_co.cycleLeft() !== false);
-                ad = (pd_0 && ad);
-            }
-            return ad;
-        }, null, null)), (_l()(), i1.ɵted(null, ['Left'])),
+        }, null, null)), i1.ɵdid(671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), i1.ɵpad(1), (_l()(), i1.ɵeld(0, null, null, 1, 'i', [['class', 'material-icons']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['add'])), (_l()(),
+            i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n'])),
+        (_l()(), i1.ɵeld(0, null, null, 32, 'div', [['class', 'journals-slider']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 4, 'div', [['class', 'slider-button']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
+            i1.ɵeld(0, null, null, 1, 'button', [['class', 'waves-effect waves-light btn purple lighten-2']], null, [[null, 'click']], function (_v, en, $event) {
+                var ad = true;
+                var _co = _v.component;
+                if (('click' === en)) {
+                    var pd_0 = (_co.cycleLeft() !== false);
+                    ad = (pd_0 && ad);
+                }
+                return ad;
+            }, null, null)), (_l()(), i1.ɵted(null, ['Left'])),
         (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])),
         (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'journals-left']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
@@ -184,26 +190,26 @@ function View_AllJournalsComponent_0(_l) {
         i1.ɵdid(802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef,
             i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_AllJournalsComponent_5)), i1.ɵdid(802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_AllJournalsComponent_6)),
         i1.ɵdid(802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef,
-            i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n\n\n']))], function (_ck, _v) {
+            i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n\n']))], function (_ck, _v) {
         var _co = _v.component;
-        var currVal_2 = _ck(_v, 4, 0, '../new-journal');
-        _ck(_v, 3, 0, currVal_2);
+        var currVal_2 = _ck(_v, 20, 0, '../new-journal');
+        _ck(_v, 19, 0, currVal_2);
         var currVal_3 = _co.journals_left;
-        _ck(_v, 21, 0, currVal_3);
+        _ck(_v, 37, 0, currVal_3);
         var currVal_4 = _co.journals;
-        _ck(_v, 27, 0, currVal_4);
+        _ck(_v, 43, 0, currVal_4);
         var currVal_5 = _co.journals_right;
-        _ck(_v, 33, 0, currVal_5);
+        _ck(_v, 49, 0, currVal_5);
         var currVal_6 = _co.journals_left;
-        _ck(_v, 49, 0, currVal_6);
+        _ck(_v, 65, 0, currVal_6);
         var currVal_7 = _co.journals;
-        _ck(_v, 52, 0, currVal_7);
+        _ck(_v, 68, 0, currVal_7);
         var currVal_8 = _co.journals_right;
-        _ck(_v, 55, 0, currVal_8);
+        _ck(_v, 71, 0, currVal_8);
     }, function (_ck, _v) {
-        var currVal_0 = i1.ɵnov(_v, 3).target;
-        var currVal_1 = i1.ɵnov(_v, 3).href;
-        _ck(_v, 2, 0, currVal_0, currVal_1);
+        var currVal_0 = i1.ɵnov(_v, 19).target;
+        var currVal_1 = i1.ɵnov(_v, 19).href;
+        _ck(_v, 18, 0, currVal_0, currVal_1);
     });
 }
 exports.View_AllJournalsComponent_0 = View_AllJournalsComponent_0;

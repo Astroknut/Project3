@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
+
 
 import { AppComponent } from './app.component';
 import { JournalService } from './journal.service';
@@ -19,6 +21,10 @@ import { LogInComponent } from './log-in/log-in.component';
 import { ContentsComponent } from './contents/contents.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
+import { WatsonComponent }  from './watson/watson.component'
+// import { WatsonService } from './watson/watson.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,12 +38,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
     SignUpComponent,
     LogInComponent,
     ContentsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ShowJournalComponent, //*********ONLY FOR TESTING**********
+    WatsonComponent,      //*********ONLY FOR TESTING**********
+    ContentsComponent
   ],
   imports: [
-    HttpModule,
     BrowserModule.withServerTransition({appId: 'anima'}),
     FormsModule,
+    HttpModule,
     RouterModule.forRoot([
         {
           path: '',
@@ -64,11 +73,25 @@ import { AboutMeComponent } from './about-me/about-me.component';
           component: AllJournalsComponent
         },
         {
+
           path: 'about',
           component: AboutMeComponent
+        },
+        {
+          path: 'newentry',   //*********ONLY FOR TESTING**********
+          component: NewEntryComponent
+        },
+        
+        {
+          path: 'showjournal', //*********ONLY FOR TESTING**********
+          component:ShowJournalComponent
         }
       ]),
-    JournalRoutingModule
+
+    JournalRoutingModule,
+    FormsModule,
+    BrowserModule.withServerTransition({appId: 'anima'}),
+    HttpModule
   ],
   providers: [JournalService],
   bootstrap: [AppComponent]

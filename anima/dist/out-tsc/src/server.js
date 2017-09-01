@@ -13,6 +13,7 @@ var bodyParser = require("body-parser");
 var session = require("express-session");
 var fs_1 = require("fs");
 var path_1 = require("path");
+//import * as httpProxy from 'http-proxy'
 var routes_1 = require("./config/routes");
 var PORT = 3000;
 core_1.enableProdMode();

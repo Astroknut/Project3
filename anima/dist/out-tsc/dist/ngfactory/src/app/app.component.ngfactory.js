@@ -21,7 +21,7 @@ function View_AppComponent_0(_l) {
             i1.ɵeld(0, null, null, 1, 'a', [['class', 'brand-logo'], ['href',
                     '#'], ['id', 'lotus']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['anima'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 11, 'ul', [['class',
                 'right hide-on-med-and-down'], ['id', 'nav-mobile']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', 'login']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Log In'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 3, 'li', [], null, null, null, null, null)),
+        (_l()(), i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', 'login']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Log In'])), (_l()(), i1.ɵted(null, ['\n\n			'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 3, 'li', [], null, null, null, null, null)),
         (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', 'about']], [[1, 'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             if (('click' === en)) {
@@ -29,7 +29,7 @@ function View_AppComponent_0(_l) {
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About Anima'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵeld(16777216, null, null, 1, 'router-outlet', [], null, null, null, null, null)), i1.ɵdid(212992, null, 0, i2.RouterOutlet, [i2.ChildrenOutletContexts, i1.ViewContainerRef,
+        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About Anima'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n\n'])), (_l()(), i1.ɵeld(16777216, null, null, 1, 'router-outlet', [], null, null, null, null, null)), i1.ɵdid(212992, null, 0, i2.RouterOutlet, [i2.ChildrenOutletContexts, i1.ViewContainerRef,
             i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null), (_l()(), i1.ɵted(null, ['\n\n']))], function (_ck, _v) {
         var currVal_2 = 'about';
         _ck(_v, 16, 0, currVal_2);

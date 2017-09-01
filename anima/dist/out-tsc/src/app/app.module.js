@@ -19,6 +19,8 @@ var sign_up_component_1 = require("./sign-up/sign-up.component");
 var log_in_component_1 = require("./log-in/log-in.component");
 var contents_component_1 = require("./contents/contents.component");
 var about_me_component_1 = require("./about-me/about-me.component");
+var watson_component_1 = require("./watson/watson.component");
+// import { WatsonService } from './watson/watson.service';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -36,12 +38,15 @@ var AppModule = (function () {
                         sign_up_component_1.SignUpComponent,
                         log_in_component_1.LogInComponent,
                         contents_component_1.ContentsComponent,
-                        about_me_component_1.AboutMeComponent
+                        about_me_component_1.AboutMeComponent,
+                        show_journal_component_1.ShowJournalComponent,
+                        watson_component_1.WatsonComponent,
+                        contents_component_1.ContentsComponent
                     ],
                     imports: [
-                        http_1.HttpModule,
                         platform_browser_1.BrowserModule.withServerTransition({ appId: 'anima' }),
                         forms_1.FormsModule,
+                        http_1.HttpModule,
                         router_1.RouterModule.forRoot([
                             {
                                 path: '',
@@ -70,9 +75,20 @@ var AppModule = (function () {
                             {
                                 path: 'about',
                                 component: about_me_component_1.AboutMeComponent
+                            },
+                            {
+                                path: 'newentry',
+                                component: new_entry_component_1.NewEntryComponent
+                            },
+                            {
+                                path: 'showjournal',
+                                component: show_journal_component_1.ShowJournalComponent
                             }
                         ]),
-                        journal_routing_module_1.JournalRoutingModule
+                        journal_routing_module_1.JournalRoutingModule,
+                        forms_1.FormsModule,
+                        platform_browser_1.BrowserModule.withServerTransition({ appId: 'anima' }),
+                        http_1.HttpModule
                     ],
                     providers: [journal_service_1.JournalService],
                     bootstrap: [app_component_1.AppComponent]

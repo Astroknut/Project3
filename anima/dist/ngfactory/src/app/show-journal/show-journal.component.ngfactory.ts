@@ -10,6 +10,9 @@ import * as i0 from './show-journal.component.css.shim.ngstyle';
 import * as i1 from '@angular/core';
 import * as i2 from '@angular/router';
 import * as i3 from '../../../../../src/app/show-journal/show-journal.component';
+import * as i4 from '../../../../../src/app/new-entry/new-entry.component';
+import * as i5 from '@angular/http';
+import * as i6 from '../../../../../src/app/journal.service';
 const styles_ShowJournalComponent:any[] = [i0.styles];
 export const RenderType_ShowJournalComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
     styles:styles_ShowJournalComponent,data:{}});
@@ -30,20 +33,33 @@ export function View_ShowJournalComponent_0(_l:any):i1.ɵViewDefinition {
           },(null as any),(null as any))),i1.ɵdid(16384,(null as any),0,i2.RouterLink,
           [i2.Router,i2.ActivatedRoute,[8,(null as any)],i1.Renderer2,i1.ElementRef],
           {routerLink:[0,'routerLink']},(null as any)),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['Journals'])),(_l()(),i1.ɵted((null as any),['\n\n\n']))],(_ck,_v) => {
-    _ck(_v,1,0);
-    const currVal_0:any = _ck(_v,6,0,'../../all-journals');
-    _ck(_v,5,0,currVal_0);
-  },(null as any));
+          ['Journals'])),(_l()(),i1.ɵted((null as any),['\n\n\n'])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'button',[['type','button']],(null as any),
+          [[(null as any),'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            var _co:i3.ShowJournalComponent = _v.component;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>_co.test1()) !== false);
+              ad = (pd_0 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['This button']))],
+      (_ck,_v) => {
+        _ck(_v,1,0);
+        const currVal_0:any = _ck(_v,6,0,'../../all-journals');
+        _ck(_v,5,0,currVal_0);
+      },(null as any));
 }
 export function View_ShowJournalComponent_Host_0(_l:any):i1.ɵViewDefinition {
-  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-show-journal',
+  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'app-show-journal',
       ([] as any[]),(null as any),(null as any),(null as any),View_ShowJournalComponent_0,
-      RenderType_ShowJournalComponent)),i1.ɵdid(114688,(null as any),0,i3.ShowJournalComponent,
-      ([] as any[]),(null as any),(null as any))],(_ck,_v) => {
-    _ck(_v,1,0);
+      RenderType_ShowJournalComponent)),i1.ɵprd(512,(null as any),i4.NewEntryComponent,
+      i4.NewEntryComponent,[i5.Http,i6.JournalService,i2.Router,i2.ActivatedRoute]),
+      i1.ɵdid(114688,(null as any),0,i3.ShowJournalComponent,[i4.NewEntryComponent],
+          (null as any),(null as any))],(_ck,_v) => {
+    _ck(_v,2,0);
   },(null as any));
 }
 export const ShowJournalComponentNgFactory:i1.ComponentFactory<i3.ShowJournalComponent> = i1.ɵccf('app-show-journal',
     i3.ShowJournalComponent,View_ShowJournalComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2NvcmV5L3dkaS91bml0LTMvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9zaG93LWpvdXJuYWwvc2hvdy1qb3VybmFsLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9jb3JleS93ZGkvdW5pdC0zL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvc2hvdy1qb3VybmFsL3Nob3ctam91cm5hbC5jb21wb25lbnQudHMiLCJuZzovLy9Vc2Vycy9jb3JleS93ZGkvdW5pdC0zL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvc2hvdy1qb3VybmFsL3Nob3ctam91cm5hbC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2NvcmV5L3dkaS91bml0LTMvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9zaG93LWpvdXJuYWwvc2hvdy1qb3VybmFsLmNvbXBvbmVudC50cy5TaG93Sm91cm5hbENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxyb3V0ZXItb3V0bGV0Pjwvcm91dGVyLW91dGxldD5cblxuPCEtLSBNRU5VIEJVVFRPTlMgLS0+XG48YnV0dG9uIFtyb3V0ZXJMaW5rXSA9IFwiWycuLi8uLi9hbGwtam91cm5hbHMnXVwiPkpvdXJuYWxzPC9idXR0b24+XG5cblxuIiwiPGFwcC1zaG93LWpvdXJuYWw+PC9hcHAtc2hvdy1qb3VybmFsPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTthQUFBO3NDQUFBO1VBQUEsZUFBK0IseUNBRVY7VUFBQSxTQUNyQjtVQUFBO1lBQUE7WUFBQTtjQUFBO2NBQUE7WUFBQTtZQUFBO1VBQUEsdUNBQUE7VUFBQTtVQUFBLG9EQUFRLElBQXdDO1VBQUEsZUFBaUI7SUFIakU7SUFHUTtJQUFSLFdBQVEsU0FBUjs7OztvQkNIQTtNQUFBO3FDQUFBLFVBQUE7TUFBQTtJQUFBOzs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvc2hvdy1qb3VybmFsL3Nob3ctam91cm5hbC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvTWFyay9XREkvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9zaG93LWpvdXJuYWwvc2hvdy1qb3VybmFsLmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvc2hvdy1qb3VybmFsL3Nob3ctam91cm5hbC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvc2hvdy1qb3VybmFsL3Nob3ctam91cm5hbC5jb21wb25lbnQudHMuU2hvd0pvdXJuYWxDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8cm91dGVyLW91dGxldD48L3JvdXRlci1vdXRsZXQ+XG5cbjwhLS0gTUVOVSBCVVRUT05TIC0tPlxuPGJ1dHRvbiBbcm91dGVyTGlua10gPSBcIlsnLi4vLi4vYWxsLWpvdXJuYWxzJ11cIj5Kb3VybmFsczwvYnV0dG9uPlxuXG5cbjxidXR0b24gdHlwZT0nYnV0dG9uJyAoY2xpY2spPVwidGVzdDEoKVwiPlRoaXMgYnV0dG9uPC9idXR0b24+IiwiPGFwcC1zaG93LWpvdXJuYWw+PC9hcHAtc2hvdy1qb3VybmFsPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTthQUFBO3NDQUFBO1VBQUEsZUFBK0IseUNBRVY7VUFBQSxTQUNyQjtVQUFBO1lBQUE7WUFBQTtjQUFBO2NBQUE7WUFBQTtZQUFBO1VBQUEsdUNBQUE7VUFBQTtVQUFBLG9EQUFRLElBQXdDO1VBQUEsZUFBaUIsMkNBR2pFO1VBQUE7VUFBQTtZQUFBO1lBQUE7WUFBc0I7Y0FBQTtjQUFBO1lBQUE7WUFBdEI7VUFBQSxnQ0FBd0M7O1FBTnhDO1FBR1E7UUFBUixXQUFRLFNBQVI7Ozs7b0JDSEE7TUFBQTtxQ0FBQTsyQkFBQTthQUFBO1VBQUE7SUFBQTs7OzsifQ==

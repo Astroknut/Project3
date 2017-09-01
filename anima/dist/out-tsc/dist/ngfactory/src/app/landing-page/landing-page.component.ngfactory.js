@@ -15,8 +15,12 @@ exports.RenderType_LandingPageComponent = i1.ɵcrt({ encapsulation: 0,
 function View_LandingPageComponent_0(_l) {
     return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 8, 'div', [['class',
                 'content']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['anima'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['src', './assets/LotusFlower.png']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n']))], null, null);
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [['class', 'center-align']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['anima'])),
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['class', 'center-align'], ['src', './assets/LotusFlower.png']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n\n'])),
+        (_l()(), i1.ɵeld(0, null, null, 13, 'div', [['class', 'landingText']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h6', [['class', 'center-align']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Welcome to anima! A journaling application that really cares.'])),
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 6, 'p', [['class', 'center-align']], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', 'login']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Log in'])), (_l()(), i1.ɵted(null, [' or '])), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', 'login']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Sign up'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n\n\n']))], null, null);
 }
 exports.View_LandingPageComponent_0 = View_LandingPageComponent_0;
 function View_LandingPageComponent_Host_0(_l) {
