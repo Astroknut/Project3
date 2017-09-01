@@ -6,6 +6,9 @@ Checkout the WireFrames for our app!
 ![Watson API](./src/assets/charts.JPG?raw=true "Watson Analysis")
 ![ERDs](./src/assets/ERD.JPG?raw=true "PSQL Models")
 
+#Heroku
+Anima as deployed on Heroku:
+https://floating-garden-46825.herokuapp.com/
 
 #Angular CLI
 
