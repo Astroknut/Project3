@@ -1,11 +1,14 @@
 # Anima
 Checkout the WireFrames for our app!
-![All Journals](./src/assets/allJournals?raw=true "All Journals View")
-![One Journal](./src/assets/showJournal.JPG?raw=true "One Journal")
-![Entries](./src/assets/entry.JPG?raw=true "Entry View")
-![Watson API](./src/assets/charts.JPG?raw=true "Watson Analysis")
-![ERDs](./src/assets/ERD.JPG?raw=true "PSQL Models")
+![All Journals](./anima/src/assets/allJournals?raw=true "All Journals View")
+![One Journal](./anima/src/assets/showJournal.JPG?raw=true "One Journal")
+![Entries](./anima/src/assets/entry.JPG?raw=true "Entry View")
+![Watson API](./anima/src/assets/charts.JPG?raw=true "Watson Analysis")
+![ERDs](./anima/src/assets/ERD.JPG?raw=true "PSQL Models")
 
+#Heroku
+Anima as deployed on Heroku:
+https://floating-garden-46825.herokuapp.com/
 
 #Angular CLI
 
