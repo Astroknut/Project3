@@ -16,6 +16,7 @@ export class AppComponent {
   	title.setTitle('Anima');
 
   	meta.addTags([
+
   	  { name: 'author',   content: 'The Best Squad!'},
   	  { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
   	  { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }

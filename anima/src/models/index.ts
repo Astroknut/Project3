@@ -1,6 +1,8 @@
 import * as Sequelize from 'sequelize';
 
-var sequelize = new Sequelize('postgres:/Mark@localhost:5432/project3');
+//***************CHANGE LOCALHOST TO <your local host>@localhost...*********
+var sequelize = new Sequelize('postgres://Mark@localhost:5432/project3');
+
 
 var Entry = sequelize.import("./entry");
 var Journal = sequelize.import('./journal');
