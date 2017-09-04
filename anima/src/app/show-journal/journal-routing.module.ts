@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContentsComponent } from '../contents/contents.component';
 import { ShowJournalComponent } from './show-journal.component';
-import { ShowEntriesComponent } from '../show-entries/show-entries.component';
+import { ShowEntryComponent } from '../show-entry/show-entry.component';
 import { NewEntryComponent } from '../new-entry/new-entry.component';
 
 const journalRoutes: Routes = [
@@ -10,8 +11,12 @@ const journalRoutes: Routes = [
 		component: ShowJournalComponent,
 		children: [
 			{
-				path: 'show-entries',
-				component: ShowEntriesComponent
+				path: 'contents',
+				component: ContentsComponent
+			},
+			{
+				path: 'show-entry/:id',
+				component: ShowEntryComponent
 			},
 			{
 				path: 'new-entry',

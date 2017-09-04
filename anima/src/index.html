@@ -7,13 +7,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <!-- Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 <body>
   <app-root></app-root>
-  <!-- MATERIALIZE -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0/8.8/auth0.min.js"></script>
+  <script type="text/javascript">
+  var webAuth = new auth0.WebAuth({
+    domain:       'https:://localhost:3000/',
+    clientID:     ''
+  });
+</script>
 </body>
 </html>

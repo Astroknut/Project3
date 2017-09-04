@@ -1,12 +1,25 @@
+.content {
+	display: block;
+	min-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
     font-size: 200px;
-    position: relative;
-    left: 475px;
+    min-width: 400px;
+    display: block;
+    margin: 0 auto;
     color:  #ffb3ff;
 }
 
 img {
-	position: relative;
-	right: -525px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+h6{
+	margin-bottom: 2px;
 }

@@ -1,3 +1,59 @@
+<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large green">
+      <i class="large material-icons">?</i>
+    </a>
+    <ul>
+      <li><p>ADD a new journal or click on a journal to continue!</p></li>
+    </ul>
+</div>
 <p>
-  all-journals works!
+   <a [routerLink] = "['../new-journal']" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
 </p>
+
+<div class="journals-slider">
+	<div class="slider-button">
+		<button class="waves-effect waves-light btn purple lighten-2" (click)="cycleLeft()">Left</button>
+	</div>
+	<div class="journals-left">
+		<!-- TO DO: I'm pretty sure 'selected' does nothing at this point -->
+		<div *ngFor="let journal of journals_left" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalLeft(journal.id)}" [style.background-color]="journal.color">
+			<div class="journal-name">
+				{{journal.name}}
+			</div>
+		</div>
+	</div>
+	<div class="journal-area">
+		<div *ngFor="let journal of journals" class="journal" [ngClass]="{'selected': journal.selected}" [style.background-color]="journal.color">
+			<div class="journal-name">
+				{{journal.name}}
+			</div>
+			<button class="waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</div>
+	</div>
+	<div class="journals-right">
+		<div *ngFor="let journal of journals_right" class="journal" [ngClass]="{'selected': journal.selected, 'invisible': visibleJournalRight(journal.id)}" [style.background-color]="journal.color">
+			<div class="journal-name">
+				{{journal.name}}
+			</div>
+		</div>
+	</div>
+	<div class="slider-button">
+		<button class="waves-effect waves-light btn purple lighten-2" (click)="cycleRight()">Right</button>
+	</div>
+</div>
+<!-- LIST -->
+<div class="journals-list">
+	<ul>
+		<li *ngFor="let journal of journals_left">
+			{{journal.name}} <button class="list-button waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</li>
+		<li *ngFor="let journal of journals">
+			{{journal.name}} <button class="list-button waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</li>
+		<li *ngFor="let journal of journals_right">
+			{{journal.name}} <button class="list-button waves-effect waves-light btn purple lighten-2" [routerLink]="['../journal', journal.id, 'contents']">Open</button>
+		</li>
+	</ul>
+</div>
+
+
