@@ -94,19 +94,6 @@ router.put('/entry/:id', EntriesController.update);
 router.delete('/entry-delete/:id', EntriesController.destroy);
 
 
-
-//GET home 
-router.route('/all-journals')
-	.get();
-
-//GET a journal
-router.route('/show-journal')
-	.get();
-
-//GET a journal entry
-router.route('/show-entry')
-	.get();
-
 //UPDATE journal entry
 router.post('/update-entry', function(req,res) {
 	res.send(JSON);

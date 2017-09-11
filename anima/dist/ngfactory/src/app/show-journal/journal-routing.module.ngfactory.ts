@@ -30,4 +30,4 @@ export const JournalRoutingModuleNgFactory:i0.NgModuleFactory<i1.JournalRoutingM
                     {path:'new-entry',component:i10.NewEntryComponent}]}]];
               },([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL01hcmsvV0RJL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvc2hvdy1qb3VybmFsL2pvdXJuYWwtcm91dGluZy5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvTWFyay9XREkvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9zaG93LWpvdXJuYWwvam91cm5hbC1yb3V0aW5nLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3JveGFubm5sb3Blei9Eb2N1bWVudHMvUHJvamVjdDMvYW5pbWEvc3JjL2FwcC9zaG93LWpvdXJuYWwvam91cm5hbC1yb3V0aW5nLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9yb3hhbm5ubG9wZXovRG9jdW1lbnRzL1Byb2plY3QzL2FuaW1hL3NyYy9hcHAvc2hvdy1qb3VybmFsL2pvdXJuYWwtcm91dGluZy5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
